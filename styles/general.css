@@ -1,0 +1,14 @@
+/* Css general for coloring and fonts for all sites */
+
+:root {
+  --Bgreen: #89AC46
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--Bgreen);
+}
