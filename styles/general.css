@@ -12,3 +12,52 @@
 body {
   background-color: var(--Bgreen);
 }
+
+
+/* #footer */
+.footer-container{
+  background-color: white;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 2em;
+  /* background: url('footer.jpg')no-repeat center center/cover ; */
+}
+.skapare a{
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.skapare a:hover{
+  transform: scale(1.05);
+}
+.skapare li{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 5px;
+}
+.snabba-links,
+.skapare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.snabba-links ul li,
+.snabba-links a{
+  display: block;
+  padding: 3px;
+  color: black; 
+}
+.snabba-links a:hover{
+  transform: scale(1.05);
+}
+.kontakta-img{
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 5px;
+}

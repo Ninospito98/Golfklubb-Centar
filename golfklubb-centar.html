@@ -3,77 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="./styles/nav-footer.css">
-    <link rel="stylesheet" href="./styles/login.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/general.css">
+    <title>Golfklubb Centar</title>
 </head>
 <body>
-    <header class="nav-container">
+  <header class="nav-container">
     <nav class="main-nav">
-  <ul>
-    <li><img src="#" alt="logo coming soon"></li>
-    <li><a href="index.html">Startsida</a></li>
-    <li><a href="about.html">Boka Startid</a></li>
-    <!-- Dropdown -->
-     <li class="has-subnav">
-      <a href="services.html">Event▾</a>
-      <ul class="sub-nav">
-        <li><a href="web-design.html">Tävlingar</a></li>
-        <li><a href="seo.html">Evenemang</a></li>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-button-container">
+      <span class="menu-button"></span>
+      </label>
+      <ul class="menu">
+        <li><img src="#" alt="logo coming soon"></li>
+        <li><a href="index.html">Startsida</a></li>
+        <li><a href="about.html">Boka Startid</a></li>
+        <!-- Dropdown -->
+        <li class="has-subnav">
+          <a href="services.html">Event▾</a>
+          <ul class="sub-nav">
+            <li><a href="web-design.html">Tävlingar</a></li>
+            <li><a href="seo.html">Evenemang</a></li>
+          </ul>
+        </li>    
+        <!-- Dropdown -->
+        <li class="has-subnav">
+          <a href="services.html">Butik▾</a>
+          <ul class="sub-nav">
+            <li><a href="web-design.html">Restaurang</a></li>
+            <li><a href="seo.html">Shop</a></li>
+          </ul>
+        </li>     
+        <!-- Dropdown -->
+        <li class="has-subnav">
+          <a href="services.html">Om oss▾</a>
+          <ul class="sub-nav">
+            <li><a href="web-design.html">Klub's Historia</a></li>
+            <li><a href="seo.html">Banan och Facilititer</a></li>
+            <li><a href="hosting.html">Medlemskap</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Kontakta oss</a></li>
+        <li><a href="login.html">Logga in</a></li>
       </ul>
-    </li>    
-    <!-- Dropdown -->
-    <li class="has-subnav">
-      <a href="services.html">Butik▾</a>
-      <ul class="sub-nav">
-        <li><a href="web-design.html">Restaurang</a></li>
-        <li><a href="seo.html">Shop</a></li>
-      </ul>
-    </li>     
-    <!-- Dropdown -->
-    <li class="has-subnav">
-      <a href="services.html">Om oss▾</a>
-      <ul class="sub-nav">
-        <li><a href="web-design.html">Klub's Historia</a></li>
-        <li><a href="seo.html">Banan och Facilititer</a></li>
-        <li><a href="hosting.html">Medlemskap</a></li>
-      </ul>
-    </li>
-    <li><a href="contact.html">Kontakta oss</a></li>
-    <li><a href="login.html">Logga in</a></li>
-  </ul>
-</nav>
+    </nav>
 </header>
-    <section class="banner">
-  <h1>Hej kära medlemmar!</h1>
-  <h2>Genom att logga in får ni tillgång till exklusivt innehåll såsom 
-    klubbnyheter, eventinformation, medlemsförmåner och mycket mer.<br>
-    Ni kan även boka och se dina tidiga bokningar</h2>
+  <section class="banner">
+  <h1>Välkommen till Golfklubb Centar</h1>
+  <h2>Spela, Tävla och Njut Tillsammans</h2>
   </section>
 
-    <section class="login-container">
-        <p>Fyll i dina uppgifter för att logga in</p>
-        <div class="login">
-            <label for="username">E-postadress eller Anvädarnamn</label><br>
-            <input type="email" name="email" id="username" required><br>
-            <label for="password">Lösenord</label><br>
-            <input type="password" name="password" id="password" required>
-            <br>
-            <input type="submit" value="Logga in">
-            <input type="checkbox"> Kom ihåg mig!
-            <br><br>
-            <p>Glömt ditt lösenord?</p>
-            <div class="skapa-konto">
-                <p>Är du inte en medlem ?</p>
-                <a href="#">Skapa konto</a>
-            </div>
-        </div>
-        
-    </section>
+  <main class="start-wrapper">
+    <article class="main-article">
+    <h1>Upptäck Golfklubb Centar</h1>
+    <p>Golfklubb Centar är en av de mest populära golfdestinationerna i regionen, känd för sin vackra bana, utmärkta faciliteter och vänliga atmosfär. Oavsett om du är en erfaren golfare eller nybörjare, erbjuder vår klubb något för alla.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nihil adipisci illum alias deleniti aut necessitatibus sequi delectus ex, rem sed maxime consequuntur, vitae at ullam in doloremque facilis ea!</p>
+    <img src="https://placehold.co/600x400" alt="">
+    </article>
+  <aside class="snabba-nytt">
+    <h3>Snabba nytt</h3>
+    <br>
+    <p><time datetime="17/10-2025">17/10-2025 Observera att golfbanan kommer att vara stängd under detta datum för att byta gräset och förbättra spelkvaliteten. Vi tackar för er förståelse och ser fram emot att välkomna er tillbaka till en fräsch och välskött bana!</time> </p>
+    <hr>
+    <p><time datetime="01/11-2025">01/11-2025 Vi gratulerar Jerome Bock som nyligen satte ett nytt rekord på vår bana! Fantastisk prestation och ett bevis på både skicklighet och fokus.</time> </p>
+  </aside>
+  <section class="nyheter-container">
+    <h1>Senaste Nyheter & Uppdateringar från klubben</h1>
+    <div class="nyheter-grid">
+      <div>
+      <img style="grid-area: img-1" src="bilder/golf1.jpg">
+      <h2>Öppet för nya medlemmar!</h2>
+      <p>Vi välkomnar nya medlemmar till vår golfklubb! Oavsett om du är nybörjare eller erfaren golfare finns det plats för dig att njuta av banan,
+         delta i events och bli en del av vårt härliga gemenskap.</p>
+      </div>
+
+      <div>
+      <img style="grid-area: img-2" src="bilder/golf2.jpg">
+      <h2>Nya golfcart på klubben!</h2>
+      <p>Vi är glada att kunna meddela att klubben nu har investerat i nya golfcart för våra medlemmar och gäster. De är moderna,
+         bekväma och miljövänliga – perfekta för att göra rundan ännu mer njutbar. Våra golfcart gör det enklare att ta sig runt banan och ger en extra bekvämlighet för alla spelare.</p>         
+      </div>
+
+      <div>
+      <img style="grid-area: img-3" src="bilder/golf3.jpg" >
+      <h2>Banan stängd för underhåll!</h2>
+      <p>Observera att golfbanan kommer att vara stängd under [specificera tid/datum]
+         för att byta gräset och förbättra spelkvaliteten. Vi tackar för er förståelse och ser fram emot att välkomna er tillbaka till en fräsch och välskött bana!</p>
+      </div>
+
+      <div>
+      <img style="grid-area: img-4" src="bilder/golf4.jpg">
+      <h2>Kommande events på klubben!</h2>
+      <p>Håll utkik efter våra spännande evenemang! Vi erbjuder allt från tävlingar och turneringar till sociala sammankomster och träningsdagar.
+         Oavsett om du är nybörjare eller erfaren spelare finns det något för alla.</p>
+      </div>
+
+      <div>
+      <img style="grid-area: img-5" src="bilder/golf5.jpg">
+      <h2>Ny rekord på klubben!</h2>
+      <p>Vi gratulerar Jerome Bock som nyligen satte ett nytt rekord på vår bana! Fantastisk prestation och ett bevis på både skicklighet och fokus.</p>
+      </div>
+
+      <div>
+      <img style="grid-area: img-6" src="bilder/golf6.jpg">
+      <h2>Förstklassig utrustning på klubben!</h2>
+      <p>Vi vill att varje runda på vår golfbana ska bli en fantastisk upplevelse. Därför erbjuder vi modern och pålitlig utrustning, inklusive golfklubbor, bollar och handskar av hög kvalitet.
+         Tillsammans med våra nya, bekväma golfcart kan du njuta av spelet med både komfort och prestanda i fokus.</p>
+      </div>
+    </div>
+  </section>
 
 
 
-<footer class="footer-container">
+  </main>
+
+  <footer class="footer-container">
     <div class="skapare">
       <h2>Sidan skapad av:</h2>
       <ul>
@@ -133,6 +178,5 @@
       </div>
     </div>
   </footer>
-    
 </body>
 </html>
