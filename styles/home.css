@@ -16,13 +16,42 @@
   text-align: center;
   padding-top: 2em;
 }
+
+.start-wrapper{
+  display: grid;
+  grid-template-columns: 0.75fr 3fr;
+  grid-template-rows: 0.5fr 3fr;
+}
+
+.main-article{
+  display: flex;
+  border: 1px solid black;
+  grid-column: span 2;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  margin: 3em 3em 0 3em;
+  padding: 3em;
+
+
+}
+.snabba-nytt{
+  border: 1px solid black;
+  padding: 1.5em;
+  font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
+  margin: 3em;
+  background-color: white;
+  
+}
+
 .nyheter-container{
   display: flex;
   flex-direction: column;
   border: 1px solid black;
   padding: 2em;
   background-color: white;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   margin: 3em;
  font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
