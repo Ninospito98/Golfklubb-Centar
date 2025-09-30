@@ -1,14 +1,138 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Välkommen till Golfklubben Centar</title>
-  <link rel="stylesheet" href="./styles/general.css">
-  <link rel="stylesheet" href="./styles/home.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./styles/nav-footer.css">
+    <link rel="stylesheet" href="./styles/login.css">
 </head>
 <body>
-  <h1>Hi</h1>
-  
+    <header class="nav-container">
+    <nav class="main-nav">
+  <ul>
+    <li><img src="#" alt="logo coming soon"></li>
+    <li><a href="index.html">Startsida</a></li>
+    <li><a href="about.html">Boka Startid</a></li>
+    <!-- Dropdown -->
+     <li class="has-subnav">
+      <a href="services.html">Event▾</a>
+      <ul class="sub-nav">
+        <li><a href="web-design.html">Tävlingar</a></li>
+        <li><a href="seo.html">Evenemang</a></li>
+      </ul>
+    </li>    
+    <!-- Dropdown -->
+    <li class="has-subnav">
+      <a href="services.html">Butik▾</a>
+      <ul class="sub-nav">
+        <li><a href="web-design.html">Restaurang</a></li>
+        <li><a href="seo.html">Shop</a></li>
+      </ul>
+    </li>     
+    <!-- Dropdown -->
+    <li class="has-subnav">
+      <a href="services.html">Om oss▾</a>
+      <ul class="sub-nav">
+        <li><a href="web-design.html">Klub's Historia</a></li>
+        <li><a href="seo.html">Banan och Facilititer</a></li>
+        <li><a href="hosting.html">Medlemskap</a></li>
+      </ul>
+    </li>
+    <li><a href="contact.html">Kontakta oss</a></li>
+    <li><a href="login.html">Logga in</a></li>
+  </ul>
+</nav>
+</header>
+    <section class="banner">
+  <h1>Hej kära medlemmar!</h1>
+  <h2>Genom att logga in får ni tillgång till exklusivt innehåll såsom 
+    klubbnyheter, eventinformation, medlemsförmåner och mycket mer.<br>
+    Ni kan även boka och se dina tidiga bokningar</h2>
+  </section>
+
+    <section class="login-container">
+        <p>Fyll i dina uppgifter för att logga in</p>
+        <div class="login">
+            <label for="username">E-postadress eller Anvädarnamn</label><br>
+            <input type="email" name="email" id="username" required><br>
+            <label for="password">Lösenord</label><br>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <input type="submit" value="Logga in">
+            <input type="checkbox"> Kom ihåg mig!
+            <br><br>
+            <p>Glömt ditt lösenord?</p>
+            <div class="skapa-konto">
+                <p>Är du inte en medlem ?</p>
+                <a href="#">Skapa konto</a>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+<footer class="footer-container">
+    <div class="skapare">
+      <h2>Sidan skapad av:</h2>
+      <ul>
+        <li>
+          
+          <a href="https://www.linkedin.com/in/ninos-pito-867538375/" target="_blank">
+             <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">Ninos Pito
+        </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">
+            Jerome Bock
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">
+            Saimonas Klietkus
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">
+            Ahmad Farzat
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="snabba-links">
+      <h2>Snabblänkar</h2>
+      <ul>
+        <li>
+          <a href="#">Boka Startid</a>
+        </li>
+        <li><a href="#">Medlemskap</a></li>
+        <li><a href="#">Klub's Historia</a></li>
+        <li><a href="#">Inloggning</a></li>
+      </ul>
+    </div>
+    <div class="kontakta-oss">
+      <h2>Välkommen att kontakta oss</h2>
+      <br>
+      <p>Har du frågor eller vill veta mer? Tveka inte att höra av dig!<br>
+        Vi finns här för att hjälpa dig med allt som rör klubben och ditt golfspel.</p><br>
+      <div class="kontakta-img">
+      <img src="bilder/location.png" alt="location" width="25px" height="25px">
+      <p>Datorgatan 6, 561 33 Huskvarna</p>
+      </div>  
+      <div class="kontakta-img">
+      <img src="bilder/viber.png" alt="Telephone" width="25px" height="25px">
+      <p>0140-44 45 10</p>
+      </div>
+      <div class="kontakta-img">
+      <img src="bilder/email.png" alt="email" width="25px" height="25px">
+      <p> info@tucsweden.se</p>
+      </div>
+    </div>
+  </footer>
+    
 </body>
 </html>
