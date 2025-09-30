@@ -42,7 +42,7 @@ ul > li:first-child{
 ul > li:last-child{
   margin-left: auto;
 }
-ul li a[href="login.html"] {
+.main-nav ul li a[href="login.html"] {
   border: 1px solid black;
 }
 
