@@ -11,6 +11,8 @@
 
 body {
   background-color: var(--Bgreen);
+  width: 100vw;
+  height: 100vh;
 }
 
 
@@ -61,3 +63,4 @@ body {
   gap: 2em;
   padding: 5px;
 }
+

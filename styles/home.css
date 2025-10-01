@@ -31,18 +31,16 @@
   align-items: center;
   flex-direction: column;
   background-color: white;
-  margin: 3em 3em 0 3em;
-  padding: 3em;
-
-
+  /* margin: 3em 3em 0 3em;
+  padding: 3em; */
 }
+
 .snabba-nytt{
   border: 1px solid black;
   padding: 1.5em;
   font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
   margin: 3em;
   background-color: white;
-  
 }
 
 .nyheter-container{
@@ -56,6 +54,7 @@
   margin: 3em;
  font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .nyheter-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -68,18 +67,39 @@
   gap: 2em;
   padding: 3em;
 }
+
 .nyheter-grid > div{
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+
 .nyheter-grid img{
   max-width: 100%;
   width: 100%;
   height: 100%;
   justify-self: center;
 }
+
 .nyheter-grid img:hover{
   transform: scale(1.05);
+}
+
+@media only screen and (min-width: 1200px) {
+ .main-article{
+  margin: 3em 3em 0 3em;
+  padding: 3em;
+ }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+  .main-article{
+  margin: 0;
+ }
 }
