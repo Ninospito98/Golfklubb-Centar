@@ -11,6 +11,7 @@
 
 body {
   background-color: var(--Bgreen);
+  max-width: 100%;
   width: 100vw;
   height: 100vh;
 }
@@ -29,45 +30,38 @@ body {
   color: black;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
 }
 .skapare a:hover{
   transform: scale(1.05);
 }
-.skapare li{
+.skapare li, .snabba-links li{
   display: flex;
   align-items: center;
   gap: 1em;
   padding: 5px;
 }
-.snabba-links,
-.skapare {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-}
-.snabba-links ul li,
 .snabba-links a{
-  display: block;
-  padding: 3px;
-  color: black; 
+  color: black;
 }
 .snabba-links a:hover{
   transform: scale(1.05);
 }
+.kontakta-oss h2, p{
+  padding-bottom: 5px;
+}
 .kontakta-img{
   display: flex;
   align-items: center;
-  gap: 2em;
+  gap: 10px;
   padding: 5px;
 }
 
 @media only screen and (min-width: 600px) {
 
 #copywrite{
-  text-align: center;
+  text-align: end;
   grid-column: span 3;
   margin-top: 1em;
   font-size: 0.9rem;
@@ -91,4 +85,5 @@ body {
     font-size: 0.8rem;
   }
 }
+
 
