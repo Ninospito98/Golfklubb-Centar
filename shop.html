@@ -1,12 +1,808 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Butik</title>
-  <link rel="stylesheet" href="./styles/general.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/shop.css">
+    <link rel="stylesheet" href="./styles/general.css">
+    <title>Golfklubb Centar</title>
 </head>
 <body>
-  
+  <header class="nav-container">
+    <nav class="main-nav">
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-button-container">
+      <span class="menu-button"></span>
+      </label>
+  <ul class="menu">
+    <li><img src="#" alt="logo coming soon"></li>
+    <li><a href="golfklubb-centar.html">Startsida</a></li>
+    <li><a href="booking.html">Boka Startid</a></li>
+    <!-- Dropdown -->
+     <li class="has-subnav">
+      <a href="#">Event▾</a>
+      <ul class="sub-nav">
+        <li><a href="competition.html">Tävlingar</a></li>
+        <li><a href="event.html">Evenemang</a></li>
+      </ul>
+    </li>    
+    <!-- Dropdown -->
+    <li class="has-subnav">
+      <a href="#.html">Butik▾</a>
+      <ul class="sub-nav">
+        <li><a href="restaurant.html">Restaurang</a></li>
+        <li><a href="shop.html">Shop</a></li>
+      </ul>
+    </li>     
+    <!-- Dropdown -->
+    <li class="has-subnav">
+      <a href="#">Om oss▾</a>
+      <ul class="sub-nav">
+        <li><a href="history.html">Klub's Historia</a></li>
+        <li><a href="facilities.html">Banan och Facilititer</a></li>
+        <li><a href="members.html">Medlemskap</a></li>
+      </ul>
+       </li>
+        <li><a href="contact.html">Kontakta oss</a></li>
+        <li><a href="login.html">Logga in</a></li>
+      </ul>
+    </nav>
+</header>
+
+<section class="banner">
+  <h1>Välkommen till klubbshopen!</h1>
+  <p>Här hittar du allt du behöver för din golfupplevelse – från bollar och handskar till kläder och exklusiv merch med klubbens logga.<br>
+     Utforska vårt sortiment och ta del av produkter som kombinerar kvalitet, stil och funktion.</p>
+  </section>
+<main class="shop-container">
+    <div class="favourite-intro">
+        <h1>Favoritprodukter</h1>
+        <p>Upptäck våra mest populära artiklar som medlemmarna älskar! Här hittar du utvalda produkter med hög <br>
+             kvalitet och klubbkänsla – perfekta både på och utanför golfbanan.</p>
+    </div>         
+        <div class="sortera">
+        <p>SORTERA EFTER:
+        <select name="sizes">
+                    <option value="size">Pris (Lag till hog)</option>
+                    <option value="size">Pris (hog till log)</option>
+                    <option value="size" selected >Mest relevant</option>
+                    <option value="size">Popularitet</option>
+                    <option value="size">Kundbetyg</option>
+                    </select>
+        </p>
+        </div>
+        <div class="shop-content">
+            <div class="product">
+                <img style="grid-area: img1" src="./bilder-shop/Tshirt1.png" width="300px">
+                <div class="product-descreption">
+                <h2>Svart Tröja
+                    <select name="sizes">
+                    <option value="size">XS</option>
+                    <option value="size" selected>S</option>
+                    <option value="size"  >M</option>
+                    <option value="size">L</option>
+                    <option value="size">XL</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(3101 omdömen)</p>
+                </div>  
+                <h2>Pris:349kr</h2>   
+                </div>  
+                
+            </div>
+            <div class="product">
+                <img style="grid-area: img2" src="./bilder-shop/Tshirt2.png" width="300px">
+                <div class="product-descreption">
+                <h2>Vit Tröja
+                    <select name="sizes">
+                    <option value="size">XS</option>
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    <option value="size">XL</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <p>(2053 omdömen)</p>
+                </div>  
+                <h2>Pris:349kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img3" src="./bilder-shop/Tshirt3.png" width="300px">
+                <div class="product-descreption">
+                <h2>Blå Tröja
+                    <select name="sizes">
+                    <option value="size">XS</option>
+                    <option value="size">S</option>
+                    <option value="size"  >M</option>
+                    <option value="size">L</option>
+                    <option value="size" selected>XL</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <p>(1916 omdömen)</p>
+                </div>  
+                <h2>Pris:349kr</h2>   
+                </div>  
+            </div>
+        
+            <div class="product">
+                <img style="grid-area: img4" src="./bilder-shop/Keps1.png" width="300px">
+                <div class="product-descreption">
+                <h2>Vit Keps
+                    <select name="sizes">
+                    <option value="size" selected>S</option>
+                    <option value="size"  >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <p>(67 omdömen)</p>
+                </div>  
+                <h2>Pris:149kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img5" src="./bilder-shop/Keps2.png" width="300px">
+                <div class="product-descreption">
+                <h2>Blå Keps
+                    <select name="sizes">
+                    <option value="size">XS</option>
+                    <option value="size">S</option>
+                    <option value="size"  >M</option>
+                    <option value="size" selected>L</option>
+                    <option value="size">XL</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <p>(0 omdömen)</p>
+                </div>  
+                <h2>Pris:149kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img6" src="./bilder-shop/Keps3.png" width="300px">
+                <div class="product-descreption">
+                <h2>Svart Keps
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size">M</option>
+                    <option value="size"selected>L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(189 omdömen)</p>
+                </div>  
+                <h2>Pris:149kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img7" src="./bilder-shop/Handskar1.png" width="300px">
+                <div class="product-descreption">
+                <h2>Vit Golfhandskar
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <p>(890 omdömen)</p>
+                </div>  
+                <h2>Pris:249kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img8" src="./bilder-shop/Handskar2.png" width="300px">
+                <div class="product-descreption">
+                <h2>Svart Golfhandskar
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(109 omdömen)</p>
+                </div>  
+                <h2>Pris:249kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img9" src="./bilder-shop/Handskar3.png" width="300px">
+                <div class="product-descreption">
+                <h2>Grön Golfhandskar
+                    <select name="sizes">
+                    <option value="size">XS</option>
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    <option value="size">XL</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <p>(27 omdömen)</p>
+                </div>  
+                <h2>Pris:249kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img10" src="./bilder-shop/7.png" width="300px">
+                <div class="product-descreption">
+                <h2>Brun Gymväska
+                    <select name="sizes">
+                    <option value="size">S 60cm</option>
+                    <option value="size" selected >M 75cm</option>
+                    <option value="size">L 90cm</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(219 omdömen)</p>
+                </div>  
+                <h2>Pris:439kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img11" src="./bilder-shop/8.png" width="300px">
+                <div class="product-descreption">
+                <h2>Svart Gymväska
+                    <select name="sizes">
+                    <option value="size">S 60cm</option>
+                    <option value="size">M 75cm</option>
+                    <option value="size"selected>L 90cm</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(1290 omdömen)</p>
+                </div>  
+                <h2>Pris:439kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img12" src="./bilder-shop/9.png" width="300px">
+                <div class="product-descreption">
+                <h2>Grön Gymväska
+                    <select name="sizes">
+                    <option value="size" selected>S 60cm</option>
+                    <option value="size">M 75cm</option>
+                    <option value="size">L 90cm</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(17 omdömen)</p>
+                </div>  
+                <h2>Pris:439kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img12" src="./bilder-shop/13.png" width="300px">
+                <div class="product-descreption">
+                <h2>Silver Termosmugg
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(21 omdömen)</p>
+                </div>  
+                <h2>Pris:129kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img12" src="./bilder-shop/14.png" width="300px">
+                <div class="product-descreption">
+                <h2>Svart Termosmugg
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(89 omdömen)</p>
+                </div>  
+                <h2>Pris:119kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img12" src="./bilder-shop/15.png" width="300px">
+                <div class="product-descreption">
+                <h2>Brun Termosmugg
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(31 omdömen)</p>
+                </div>  
+                <h2>Pris:119kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img13" src="./bilder-shop/Flaska1.png" width="300px">
+                <div class="product-descreption">
+                <h2>Silver Vattenflaska
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(7 omdömen)</p>
+                </div>  
+                <h2>Pris:89kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img13" src="./bilder-shop/Flaska2.png" width="300px">
+                <div class="product-descreption">
+                <h2>Svart Vattenflaska
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(62 omdömen)</p>
+                </div>  
+                <h2>Pris:89kr</h2>   
+                </div>  
+            </div>
+            <div class="product">
+                <img style="grid-area: img13" src="./bilder-shop/Flaska3.png" width="300px">
+                <div class="product-descreption">
+                <h2>Vit Vattenflaska
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(2 omdömen)</p>
+                </div>  
+                <h2>Pris:89kr</h2>   
+                </div>  
+            </div>
+    </div>
+</main>
+
+                    <!-- Här ifrån börjar den horisontella content -->
+
+ <section class="content-horisontell">
+    <h1>Rabattprodukter! Obs: Gäller bara medlemmar</h1>
+    <p>Passa på att fynda! Här hittar du utvalda produkter till specialpris.
+         Perfekt för dig som vill ha hög kvalitet till ett ännu bättre värde.</p>
+    <div class="shop-content-horisontell">
+            <div class="product">
+                <img src="./bilder-shop/16.png" width="300px">
+                <div class="product-descreption">
+                <h2>Vit Shoppingväska
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <p>(30 omdömen)</p>
+                </div>  
+                <h2>Pris:29:99kr</h2>   
+                <p style="color: red;"> Spara 25kr</p>
+                </div>  
+                
+            </div>
+            <div class="product">
+                <img src="./bilder-shop/17.png" width="300px">
+                <div class="product-descreption">
+                <h2>Svart Shoppingväska
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>                    
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="M480-644v236l96 74-36-122 90-64H518l-38-124ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <p>(12 omdömen)</p>
+                </div>  
+                <h2>Pris:29:99kr</h2>   
+                <p style="color: red;"> Spara 25kr</p>
+                </div>                  
+            </div>
+            <div class="product">
+                <img src="./bilder-shop/18.png" width="300px">
+                <div class="product-descreption">
+                <h2>Grön Shoppingväska
+                    <select name="sizes">
+                    <option value="size">S</option>
+                    <option value="size" selected >M</option>
+                    <option value="size">L</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+
+                    <p>(2 omdömen)</p>
+                </div>  
+                <h2>Pris:29:99kr</h2>   
+                <p style="color: red;"> Spara 25kr</p>
+                </div>                                  
+            </div>
+            <div class="product">
+                <img src="./bilder-shop/4.png" width="300px">
+                <div class="product-descreption">
+                <h2>Vit Mobilskal
+                    <select name="sizes">
+                    <option value="size">Iphone x</option>
+                    <option value="size">Iphone 12</option>
+                    <option value="size"> Iphone 13pro</option>
+                    <option value="size"> Iphone 14pro</option>
+                    <option value="size"> Iphone 15</option>
+                    <option value="size"> Iphone 15pro</option>
+                    <option value="size"> Iphone 16</option>
+                    <option value="size"selected> Iphone 17pro</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+
+                    <p>(17 omdömen)</p>
+                </div>  
+                <h2>Pris:99:99kr</h2>   
+                <p style="color: red;"> Spara 39kr</p>
+                </div>                      
+            </div>
+            <div class="product">
+                <img src="./bilder-shop/5.png" width="300px">
+                <div class="product-descreption">
+                <h2>Svart Mobilskal
+                    <select name="sizes">
+                    <option value="size">Iphone x</option>
+                    <option value="size">Iphone 12</option>
+                    <option value="size"> Iphone 13pro</option>
+                    <option value="size"> Iphone 14pro</option>
+                    <option value="size"> Iphone 15</option>
+                    <option value="size"> Iphone 15pro</option>
+                    <option value="size"> Iphone 16</option>
+                    <option value="size"selected> Iphone 17pro</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+
+                    <p>(21 omdömen)</p>
+                </div>  
+                <h2>Pris:99:99kr</h2>   
+                <p style="color: red;"> Spara 39kr</p>
+                </div> 
+            </div>
+            <div class="product">
+                <img src="./bilder-shop/6.png" width="300px">
+                <div class="product-descreption">
+                <h2>Grön Mobilskal
+                    <select name="sizes">
+                    <option value="size">Iphone x</option>
+                    <option value="size">Iphone 12</option>
+                    <option value="size"> Iphone 13pro</option>
+                    <option value="size"> Iphone 14pro</option>
+                    <option value="size"> Iphone 15</option>
+                    <option value="size"> Iphone 15pro</option>
+                    <option value="size"> Iphone 16</option>
+                    <option value="size"selected> Iphone 17pro</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+
+                    <p>(1 omdömen)</p>
+                </div>  
+                <h2>Pris:99:99kr</h2>   
+                <p style="color: red;"> Spara 39kr</p>
+                </div> 
+            </div>
+            <div class="product">
+                <img src="./bilder-shop/10.png" width="300px">
+                <div class="product-descreption">
+                <h2>Vit Kaffemugg
+                    <select name="sizes">
+                    <option value="size">1</option>
+                    <option value="size" selected >2</option>
+                    <option value="size">3</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+
+                    <p>(22 omdömen)</p>
+                </div>  
+                <h2>Pris:39:99kr</h2>   
+                <p style="color: red;"> Spara 15kr</p>
+                </div>
+            </div>
+            <div class="product">
+                <img  src="./bilder-shop/11.png" width="300px">
+                <div class="product-descreption">
+                <h2>Svart Kaffemugg
+                    <select name="sizes">
+                    <option value="size">1</option>
+                    <option value="size" selected >2</option>
+                    <option value="size">3</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+
+                    <p>(51 omdömen)</p>
+                </div>  
+                <h2>Pris:39:99kr</h2>   
+                <p style="color: red;"> Spara 15kr</p>
+                </div>
+            </div>
+            <div class="product">
+                <img  src="./bilder-shop/12.png" width="300px">
+                <div class="product-descreption">
+                <h2>Blå Kaffemugg
+                    <select name="sizes">
+                    <option value="size">1</option>
+                    <option value="size" selected >2</option>
+                    <option value="size">3</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+
+                    <p>(4 omdömen)</p>
+                </div>  
+                <h2>Pris:39:99kr</h2>   
+                <p style="color: red;"> Spara 15kr</p>
+                </div>
+            </div>
+            <div class="product">
+                <img  src="./bilder-shop/Golfball.png" width="300px">
+                <div class="product-descreption">
+                <h2>Golfball
+                    <select name="sizes">
+                    <option value="size">25</option>
+                    <option value="size" selected >50</option>
+                    <option value="size">75</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+
+                    <p>(1 omdömen)</p>
+                </div>  
+                <h2>Pris:319:99kr</h2>   
+                <p style="color: red;"> Spara 80kr</p>
+                </div>
+            </div>
+            
+            <div class="product">
+                <img src="./bilder-shop/vet-ej-vad-den-heter.png" width="300px">
+                <div class="product-descreption">
+                <h2>Tee
+                    <select name="sizes">
+                    <option value="size">75</option>
+                    <option value="size" selected >105</option>
+                    <option value="size">135</option>
+                    </select>
+                </h2>       
+                <div class="rating">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m233-120 93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Z"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#1f1f1f"><path d="m384-334 96-74 96 74-36-122 90-64H518l-38-124-38 124H330l90 64-36 122ZM233-120l93-304L80-600h304l96-320 96 320h304L634-424l93 304-247-188-247 188Zm247-369Z"/></svg>
+
+                    <p>(0 omdömen)</p>
+                </div>  
+                <h2>Pris:49:99kr</h2>   
+                <p style="color: red;"> Spara 25kr</p>
+                </div>
+            </div>
+    </div>
+    </section>
+
+<footer class="footer-container">
+    <div class="skapare">
+      <h2>Sidan skapad av:</h2>
+      <ul>
+        <li>
+          
+          <a href="https://www.linkedin.com/in/ninos-pito-867538375/" target="_blank">
+             <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">Ninos Pito
+        </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">
+            Jerome Bock
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">
+            Saimonas Klietkus
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank">
+            <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">
+            Ahmad Farzat
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="snabba-links">
+      <h2>Snabblänkar</h2>
+      <ul>
+        <li>
+          <a href="booking.html">Boka Startid</a>
+        </li>
+        <li><a href="members.html">Medlemskap</a></li>
+        <li><a href="history.html">Klub's Historia</a></li>
+        <li><a href="login.html">Inloggning</a></li>
+      </ul>
+    </div>
+    <div class="kontakta-oss">
+      <h2>Välkommen att kontakta oss</h2>
+      <br>
+      <p>Har du frågor eller vill veta mer? Tveka inte att höra av dig!<br>
+        Vi finns här för att hjälpa dig med allt som rör klubben och ditt golfspel.</p><br>
+      <div class="kontakta-img">
+      <img src="bilder/location.png" alt="location" width="25px" height="25px">
+      <p>Datorgatan 6, 561 33 Huskvarna</p>
+      </div>  
+      <div class="kontakta-img">
+      <img src="bilder/viber.png" alt="Telephone" width="25px" height="25px">
+      <p>0140-44 45 10</p>
+      </div>
+      <div class="kontakta-img">
+      <img src="bilder/email.png" alt="email" width="25px" height="25px">
+      <p> info@tucsweden.se</p>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
