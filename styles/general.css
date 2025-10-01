@@ -19,12 +19,12 @@ body {
 /* #footer */
 .footer-container{
   background-color: white;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 2em;
   /* background: url('footer.jpg')no-repeat center center/cover ; */
 }
+
 .skapare a{
   color: black;
   display: flex;
@@ -62,5 +62,33 @@ body {
   align-items: center;
   gap: 2em;
   padding: 5px;
+}
+
+@media only screen and (min-width: 600px) {
+
+#copywrite{
+  text-align: center;
+  grid-column: span 3;
+  margin-top: 1em;
+  font-size: 0.9rem;
+}
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-container{
+    background-color: var(--Bgreen);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 50px;
+    text-align: center;
+    justify-items: center;
+    row-gap: 2em;
+  }
+  .kontakta-oss{
+    grid-column: span 2;
+  }
+  #copywrite{
+    grid-column: span 2;
+    font-size: 0.8rem;
+  }
 }
 
