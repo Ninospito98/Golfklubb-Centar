@@ -10,7 +10,7 @@
 </head>
 <body>
   <header class="nav-container">          
-    <img class="nav-logo-dropdown" src="#" alt="logo coming soon">
+    <img class="nav-logo" src="./bilder/logos/logo-simple.png" alt="logo coming soon">
     <nav class="main-nav">
       <input type="checkbox" name="menu-toggle" id="menu-toggle">
       <label for="menu-toggle" class="hamburger-menu">
@@ -20,7 +20,7 @@
       </label>
 
   <ul class="menu">
-    <li><img class="nav-logo" src="#" alt="logo coming soon"></li>
+    <li class="logo-holder"></li>
     <li><a href="golfklubb-centar.html">Startsida</a></li>
     <li><a href="booking.html">Boka Startid</a></li>
     <!-- Dropdown -->
@@ -41,9 +41,9 @@
     </li>     
     <!-- Dropdown -->
     <li class="has-subnav">
-      <a href="#">Om oss▾</a>
+      <a href="./about.html">Om oss▾</a>
       <ul class="sub-nav">
-        <li><a href="history.html">Klub's Historia</a></li>
+        <li><a href="history.html">Klubbens Historia</a></li>
         <li><a href="facilities.html">Banan och Facilititer</a></li>
         <li><a href="members.html">Medlemskap</a></li>
       </ul>
@@ -63,14 +63,14 @@
     <h1>Upptäck Golfklubb Centar</h1>
     <p>Golfklubb Centar är en av de mest populära golfdestinationerna i regionen, känd för sin vackra bana, utmärkta faciliteter och vänliga atmosfär. Oavsett om du är en erfaren golfare eller nybörjare, erbjuder vår klubb något för alla.</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nihil adipisci illum alias deleniti aut necessitatibus sequi delectus ex, rem sed maxime consequuntur, vitae at ullam in doloremque facilis ea!</p>
-    <img src="https://placehold.co/600x400" alt="">
+    <img class="welcome-img" src="https://placehold.co/400x300" alt="">
     </article>
   <aside class="snabba-nytt">
     <h3>Snabba nytt</h3>
     <br>
-    <p><time datetime="17/10-2025">17/10-2025 Observera att golfbanan kommer att vara stängd under detta datum för att byta gräset och förbättra spelkvaliteten. Vi tackar för er förståelse och ser fram emot att välkomna er tillbaka till en fräsch och välskött bana!</time> </p>
+    <p><time datetime="2025-10-17">17/10-2025 Observera att golfbanan kommer att vara stängd under detta datum för att byta gräset och förbättra spelkvaliteten. Vi tackar för er förståelse och ser fram emot att välkomna er tillbaka till en fräsch och välskött bana!</time> </p>
     <hr>
-    <p><time datetime="01/11-2025">01/11-2025 Vi gratulerar Jerome Bock som nyligen satte ett nytt rekord på vår bana! Fantastisk prestation och ett bevis på både skicklighet och fokus.</time> </p>
+    <p><time datetime="2025-11-01">01/11-2025 Vi gratulerar Jerome Bock som nyligen satte ett nytt rekord på vår bana! Fantastisk prestation och ett bevis på både skicklighet och fokus.</time> </p>
   </aside>
   <section class="nyheter-container">
     <h1>Senaste Nyheter & Uppdateringar från klubben</h1>
@@ -123,11 +123,11 @@
   </main>
 
   <footer class="footer-container">
+    
     <div class="skapare">
       <h2>Sidan skapad av:</h2>
-      <ul>
+      <ul class="skapare-list">
         <li>
-          
           <a href="https://www.linkedin.com/in/ninos-pito-867538375/" target="_blank">
              <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">Ninos Pito
         </a>
@@ -181,6 +181,7 @@
       <p> info@tucsweden.se</p>
       </div>
     </div>
+    <p id="copywrite">&copy;2025 Sökmotorerna AB</p>
   </footer>
 </body>
 </html>
