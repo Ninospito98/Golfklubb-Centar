@@ -95,8 +95,6 @@ ul > li:last-child{
   display: none;
 }
 
-
-
 #menu-toggle:checked + .hamburger-menu + .menu {
   display: flex;
 }
@@ -139,19 +137,18 @@ input[name='menu-toggle']:checked ~ label .bottom {
   }
 
   .sub-nav {
-  display: none;
-  position: absolute;
-  top: -50%; /* below parent */
-  left: 110%;
-  background: var(--Bgreen);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  min-width: 150px;
-  border: 1px solid #ccc;
-  z-index: 1000;
-  
-}
+    display: none;
+    position: absolute;
+    top: -50%; /* below parent 100%*/
+    left: 100%;
+    background: var(--Bgreen);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+  }
 
   input[name='menu-toggle'] ~ .menu {
     height: 0;
