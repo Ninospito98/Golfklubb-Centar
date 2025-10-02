@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.history-banner {
+  background: url('/bilder/historybanner.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.history-goal-vision-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 48px 32px;
+  gap: 32px;
+}
+
+.history-box {
+  background: var(--Boxwhite);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 32px;
+  width: 45%;
+  min-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-box:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.history-box img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.history-box h2 {
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.history-box p, 
+.history-box ul {
+  font-family: 'Merriweather', serif;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.history-box ul {
+  margin: 16px 0;
+  padding-left: 19px;
+}
+
+.about-us-box {
+  background: var(--Boxwhite);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 32px;
+  width: 90%;             
+  max-width: 1000px;       
+  margin: 3em auto 0 auto; 
+  text-align: center;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: space-between; 
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.profile {
+  flex: 1;
+  max-width: 280px;
+  text-align: center;
+}
+
+.profile img {
+  width: 200px;
+  height: 200px;
+  object-fit:cover;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.profile h3 {
+  margin-top: 12px;
+  font-size: 20px;
+  color: #000000;
+}
+
+.profile p {
+  margin-top: 8px;
+  font-family: 'Merriweather', serif;
+  color: #000000;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+  .history-container {
+    padding: 2em 1.5em;
+    gap: 1.5em;
+  }
+
+  .history-box {
+    width: 100%;
+  }
+
+  .history-banner {
+    font-size: 2rem;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .history-container {
+    padding: 1.5em 1em;
+    gap: 1em;
+  }
+
+  .history-box {
+    width: 100%;
+    padding: 1.5em;
+  }
+
+  .history-box img {
+    height: 150px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .history-container {
+    max-width: 1600px;
+  }
+
+  .history-box {
+    width: 40%;
+  }
+
+  .history-banner {
+    font-size: 3rem;
+    height: 300px;
+  }
+}
