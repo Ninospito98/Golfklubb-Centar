@@ -20,7 +20,7 @@
 .start-wrapper {
   display: grid;
   grid-template-columns: 0.75fr 3fr;
-  grid-template-rows: 0.5fr 1.5fr;
+  grid-template-rows: 0.5fr 1fr;
 }
 
 .main-article {
@@ -31,15 +31,26 @@
   align-items: center;
   flex-direction: column;
   background-color: var(--Boxwhite);
+  text-align: center;
   /* margin: 3em 3em 0 3em;
   padding: 3em; */
 }
 
-.snabba-nytt {
+.welcome-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 2em;
+}
+
+.news {
   border: 1px solid black;
   padding: 1.5em;
   font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--Boxwhite);
+}
+
+.side-news  {
+  margin-top: 1em;
 }
 
 .nyheter-container {
@@ -81,13 +92,20 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .start-wrapper {
+    gap: 1.5em;
+  }
  .main-article{
-  margin: 3em 3em 0 3em;
-  padding: 3em;
+    margin: 3em 3em 0 3em;
+    padding: 3em;
   }
 
- .nyheter-container, .snabba-nytt {
-  margin: 3em;
+ .news {
+    margin: 1.5em 1.5em 3em 3em ;
+  }
+
+  .nyheter-container {
+    margin: 1.5em 3em 3em 1.5em ;
   }
 
   .nyheter-grid{
@@ -107,4 +125,11 @@
     grid-template-rows: 1fr 1fr;
   }
 
+}
+
+@media screen and (max-width: 600px) {
+ .nyheter-grid {
+  padding: 0;
+ }
+  
 }
