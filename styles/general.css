@@ -1,7 +1,8 @@
 /* Css general for coloring and fonts for all sites */
 
 :root {
-  --Bgreen: #89AC46
+  --Bgreen: rgb(137, 172, 70);
+  --Boxwhite: #f1f1e7;
 }
 
 * {
@@ -19,7 +20,7 @@ body {
 
 /* #footer */
 .footer-container{
-  background-color: white;
+  background-color: var(--Boxwhite);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 2em;
@@ -56,6 +57,10 @@ body {
   align-items: center;
   gap: 10px;
   padding: 5px;
+}
+
+.imgs-footer{
+  width: 25px;;
 }
 
 @media only screen and (min-width: 600px) {
