@@ -6,6 +6,7 @@
   <title>Logga in</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/login.css">
 </head>
 <body>
   <header class="nav-container">          
@@ -52,6 +53,35 @@
     </nav>
   </header>
 
+  <section class="banner">
+    <div class="banner-text">
+  <h1>Hej kära medlemmar!</h1>
+  <h2>Genom att logga in får ni tillgång till exklusivt innehåll såsom 
+    klubbnyheter, eventinformation, medlemsförmåner och mycket mer.<br>
+    Ni kan även boka och se dina tidiga bokningar</h2>
+    </div>
+  </section>
+
+    <main class="login-container">
+        <p>Fyll i dina uppgifter för att logga in</p>
+        <div class="login">
+            <label for="username">E-postadress eller Anvädarnamn</label><br>
+            <input type="email" name="email" id="username" required><br>
+            <label for="password">Lösenord</label><br>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <input type="submit" value="Logga in">
+            <input type="checkbox"> Kom ihåg mig!
+            <br><br>
+            <p>Glömt ditt lösenord?</p>
+            <div class="skapa-konto">
+                <p>Är du inte en medlem ?</p>
+                <a href="#">Skapa konto</a>
+            </div>
+        </div>
+        
+    </main>
+
   <footer class="footer-container">
     
     <div class="skapare">
@@ -59,24 +89,24 @@
       <ul>
         <li>
           <a href="https://www.linkedin.com/in/ninos-pito-867538375/" target="_blank">
-             <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">Ninos Pito
+             <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">Ninos Pito
         </a>
         </li>
         <li>
           <a href="#" target="_blank">
-            <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">
+            <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">
             Jerome Bock
           </a>
         </li>
         <li>
           <a href="#" target="_blank">
-            <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">
+            <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">
             Saimonas Klietkus
           </a>
         </li>
         <li>
           <a href="#" target="_blank">
-            <img src="bilder/linkedin.png" alt="linkedin icon" width="25px">
+            <img src="bilder/linkedin.png" alt="linkedin icon" class="imgs-footer">
             Ahmad Farzat
           </a>
         </li>
@@ -98,15 +128,15 @@
       <p>Har du frågor eller vill veta mer? Tveka inte att höra av dig!<br>
         Vi finns här för att hjälpa dig med allt som rör klubben och ditt golfspel.</p>
       <div class="kontakta-img">
-      <img src="bilder/location.png" alt="location" width="25px" height="25px">
+      <img src="bilder/location.png" alt="location" class="imgs-footer">
       <p>Datorgatan 6, 561 33 Huskvarna</p>
       </div>  
       <div class="kontakta-img">
-      <img src="bilder/viber.png" alt="Telephone" width="25px" height="25px">
+      <img src="bilder/viber.png" alt="Telephone" class="imgs-footer">
       <p>0140-44 45 10</p>
       </div>
       <div class="kontakta-img">
-      <img src="bilder/email.png" alt="email" width="25px" height="25px">
+      <img src="bilder/email.png" alt="email" class="imgs-footer">
       <p> info@tucsweden.se</p>
       </div>
     </div>
