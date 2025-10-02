@@ -17,7 +17,6 @@ body {
   height: 100vh;
 }
 
-
 /* #footer */
 .footer-container{
   background-color: var(--Boxwhite);
@@ -34,24 +33,30 @@ body {
   justify-content: center;
   gap: 5px;
 }
+
 .skapare a:hover{
   transform: scale(1.05);
 }
+
 .skapare li, .snabba-links li{
   display: flex;
   align-items: center;
   gap: 1em;
   padding: 5px;
 }
+
 .snabba-links a{
   color: black;
 }
+
 .snabba-links a:hover{
   transform: scale(1.05);
 }
+
 .kontakta-oss h2, p{
   padding-bottom: 5px;
 }
+
 .kontakta-img{
   display: flex;
   align-items: center;
@@ -60,34 +65,53 @@ body {
 }
 
 .imgs-footer{
-  width: 25px;;
+  width: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer-container{
+    background-color: var(--Bgreen);
+  }
+    
 }
 
 @media only screen and (min-width: 600px) {
-
-#copywrite{
-  text-align: end;
-  grid-column: span 3;
-  margin-top: 1em;
-  font-size: 0.9rem;
-}
+  #copywrite{
+    text-align: end;
+    grid-column: span 3;
+    margin-top: 1em;
+    font-size: 0.9rem;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   .footer-container{
-    background-color: var(--Bgreen);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 50px;
     text-align: center;
     justify-items: center;
     row-gap: 2em;
   }
+
   .kontakta-oss{
     grid-column: span 2;
   }
+
   #copywrite{
     grid-column: span 2;
     font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .skapare, .snabba-links, .kontakta-oss{
+    text-align: center;
   }
 }
 
