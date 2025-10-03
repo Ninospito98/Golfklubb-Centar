@@ -6,6 +6,7 @@
   <title>Medlemmar</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/members.css">
 </head>
 <body>
   <header class="nav-container">          
@@ -39,7 +40,7 @@
         </li>     
         <!-- Dropdown -->
         <li class="has-subnav">
-          <a href="./about.html">Om oss▾</a>
+          <a href="#.html">Om oss▾</a>
           <ul class="sub-nav">
             <li><a href="history.html">Om oss</a></li>
             <li><a href="facilities.html">Banan och Facilititer</a></li>
@@ -51,6 +52,69 @@
       </ul>
     </nav>
   </header>
+
+  <section class="banner">
+    <div class="banner-text">
+      <h1>Medlemskap</h1>
+      <h2>Bli en del av vår golfgemenskap</h2>
+    </div>
+  </section>
+
+  <main class="members-wrapper">
+    <aside class="members-aside">
+      <div>
+        <h2>Fördelar med medlemskap</h2>
+        <ul>
+          <li>Fri tillgång till golfbanan under öppettider</li>
+          <li>Rabatter i restaurangen och shoppen</li>
+          <li>Möjlighet att delta i klubbens tävlingar och evenemang</li>
+          <li>Användning av träningsfaciliteter i olika nivåer</li>
+          <li>Sociala aktiviteter och nätverksmöjligheter</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Registrera dig idag</h2>
+        <p>Få 15% rabatt om du registrerar dig innan den 17/11. Uppge TUC som rabattkod!</p>
+        <input type="button" value="Bli Medlem" onclick="window.location.href='createaccount.html'" class="createaccount-btn">
+      </div>
+
+    </aside>
+    <section class="members-container">
+      <div class="members-grid">
+        <div class="member-type">
+          <img src="./bilder/bronzemember.png" alt="Brons medlemskap icon" class="member-icon">
+          <h2>Bas Medlemskap</h2>
+          <p>Få tillgång till våra bas faciliteter och möjlighet att kvalificera sig till tävlingar. Inkluderar 5% rabatter i restaurangen och shoppen.</p>
+          <p><strong>Pris:</strong> 1500 SEK/år</p>
+        </div>
+        <div class="member-type">
+          <img src="./bilder/silvermember.png" alt="Silver medlemskap icon" class="member-icon">
+          <h2>Standard Medlemskap</h2>
+          <p>För golfare som vill njuta av vår bana och delta i klubbens aktiviteter, ni får även tillgång till träningslokaler. Inkluderar 10% rabatter i restaurangen och shoppen.</p>
+          <p><strong>Pris:</strong> 3000 SEK/år</p>
+        </div>
+        <div class="member-type">
+          <img src="./bilder/guldmember.png" alt="Guld medlemskap icon" class="member-icon">
+          <h2>Familje Medlemskap</h2>
+          <p>Perfekt för familjer som vill spela tillsammans. Gäller för två vuxna och upp till tre barn under 18 år.</p>
+          <p><strong>Pris:</strong> 7000 SEK/år</p>
+        </div>
+        <div class="member-type">
+          <img src="./bilder/emeraldmember.png" alt="Emerald medlemskap icon" class="member-icon">
+          <h2>Premium Medlemskap</h2>
+          <p>Få tillgång till samtliga faciliteter, träning, spa och vipbaren. Kostnadsfri Caddy om man kvalificerar sig till tävlingar.</p>
+          <p><strong>Pris:</strong> 2500 SEK/år</p>
+        </div>
+        <div class="sponsorship">
+          <img src="./bilder/sponsoricon.png" alt="Sponsor icon" class="member-icon">
+          <h2>Vill du bli sponsor</h2>
+          <p>Som företagssponsor ingår upp till 15 medlemskap baserat på vilken nivår</p>
+          <p>Ni kan även välja till evenemangspaket, träningspaket/friskvård och facilitetspaket med konferenserum med mera</p>
+          <p>För att bli sponsor ber vi er kontakta vårat marketing team för att skräddasy rätt paket för er</p>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer-container">
     <div class="skapare">
