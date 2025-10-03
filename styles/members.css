@@ -1,0 +1,113 @@
+
+.banner {
+  text-align: center;
+  background: var(--Boxwhite);
+}
+
+.banner {
+  width: 100%;
+  height: 350px; /* adjust */
+  background: url('/bilder/banner-member.png') no-repeat  center 20%/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(8, 8, 8);
+  text-align: center;
+  padding-top: 2em;
+  /* color: var(--Bgreen); */
+}
+
+.banner-text{
+  background: rgb(242, 242, 233, 0.6);
+  border-radius: 8px;
+
+}
+
+main {
+  display: flex;
+  gap: 3rem;
+  padding: 2em;
+  margin: 1.5em;
+}
+
+.members-aside, .members-aside ul{
+  background: var(--Boxwhite);
+  list-style-type: none;
+  text-align: center;
+  padding: 0.5em;
+  flex: 25%;
+}
+
+.members-aside li{
+  padding: 0.5em;
+}
+
+.createaccount-btn{
+  background-color: var(--Bgreen);
+  color: white;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1em;
+}
+
+.members-container {
+  background: var(--Boxwhite);
+  padding: 1em;
+  flex: 75%;
+}
+
+.members-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.member-icon{
+  width: 150px;
+  float: left;
+}
+.member-type, .sponsorship{
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+}
+
+.sponsorship{
+  grid-column: span 2;
+
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    gap: 0 ;
+  }
+  .members-aside, .members-container {
+    flex: 100%;
+  }
+  .member-icon{
+    width: 150px;
+    float: none;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .members-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .sponsorship{
+    grid-column: span 1;
+  }
+}
+
+
+
+
