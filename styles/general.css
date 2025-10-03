@@ -17,6 +17,10 @@ body {
   height: 100vh;
 }
 
+main, main > div, main > article, main > section, main > aside {
+  border-radius: 8px;
+}
+
 /* #footer */
 .footer-container{
   background-color: var(--Boxwhite);
