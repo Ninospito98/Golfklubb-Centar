@@ -108,6 +108,7 @@ img{
     margin: auto;  
     gap: 5rem;
 }
+
 .shop-content-horisontell img:hover{
     transform: scale(1.15);
 }
