@@ -17,6 +17,10 @@ body {
   height: 100vh;
 }
 
+main, main > div, main > article, main > section, main > aside {
+  border-radius: 8px;
+}
+
 /* #footer */
 .footer-container{
   background-color: var(--Boxwhite);
@@ -71,8 +75,13 @@ body {
 @media only screen and (max-width: 1200px) {
   .footer-container{
     background-color: var(--Bgreen);
+  }    
+}
+
+@media only screen and (max-width: 992px) {
+  main, main > div, main > article, main > section, main > aside {
+  border-radius: 0;
   }
-    
 }
 
 @media only screen and (min-width: 600px) {
