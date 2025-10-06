@@ -1,5 +1,5 @@
 /* Css general for coloring and fonts for all sites */
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
 :root {
   --Bgreen: rgb(137, 172, 70);
   --Boxwhite: #f1f1e7;
@@ -11,10 +11,11 @@
 }
 
 body {
-  background-color: var(--Bgreen);
+  background: var(--Bgreen);
   max-width: 100%;
   width: 100vw;
   height: 100vh;
+  font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 main, main > div, main > article, main > section, main > aside {
@@ -42,11 +43,18 @@ main, main > div, main > article, main > section, main > aside {
   transform: scale(1.05);
 }
 
-.skapare li, .snabba-links li{
+.skapare li, .snabba-links li, .kontakta-oss li{
   display: flex;
   align-items: center;
   gap: 1em;
   padding: 5px;
+}
+
+.skapare, .snabba-links, .kontakta-oss{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .snabba-links a{
