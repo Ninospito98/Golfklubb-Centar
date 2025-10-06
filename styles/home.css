@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap'); */
 *{
   margin: 0;
   padding: 0;
@@ -45,7 +45,7 @@
 .news {
   border: 1px solid black;
   padding: 1.5em;
-  font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
+  /* font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif; */
   background-color: var(--Boxwhite);
 }
 
@@ -53,7 +53,7 @@
   margin-top: 1em;
 }
 
-.nyheter-container {
+.news-container {
   display: flex;
   flex-direction: column;
   border: 1px solid black;
@@ -61,10 +61,10 @@
   background-color: var(--Boxwhite);
   /* justify-content: center; */
   align-items: center;
- font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
+ /* font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif; */
 }
 
-.nyheter-grid {
+.news-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr 1fr 1fr;
@@ -73,21 +73,21 @@
   padding: 3em;
 }
 
-.nyheter-grid > div {
+.news-grid > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 
-.nyheter-grid img {
+.news-grid img {
   max-width: 100%;
   width: 100%;
   height: 100%;
   justify-self: center;
 }
 
-.nyheter-grid img:hover {
+.news-grid img:hover {
   transform: scale(1.05);
 }
 
@@ -104,11 +104,11 @@
     margin: 1.5em 1.5em 3em 3em ;
   }
 
-  .nyheter-container {
+  .news-container {
     margin: 1.5em 3em 3em 1.5em ;
   }
 
-  .nyheter-grid{
+  .news-grid{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
   }
@@ -116,11 +116,11 @@
 
 @media only screen and (max-width: 768px) {
 
-.start-wrapper {
-  display: flex;
-  flex-direction: column;
+  .start-wrapper {
+    display: flex;
+    flex-direction: column;
 }
-  .nyheter-grid {
+  .news-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
@@ -128,7 +128,7 @@
 }
 
 @media only screen and (max-width: 600px) {
- .nyheter-grid {
+ .news-grid {
   padding: 0;
  }
   
