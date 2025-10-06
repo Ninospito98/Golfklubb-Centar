@@ -6,6 +6,7 @@
   <title>Skapa Konto</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="styles/createaccount.css">
 </head>
 <body>
   <header class="nav-container">          
@@ -51,7 +52,45 @@
       </ul>
     </nav>
   </header>
+   <section class="banner">
+    <ul class="button">
+      <p></p>
+    </ul>
+   </section> 
+  <main class="createaccount-container">
+        <h2>Skapa Medlemskap</h2><br>
+        <label for="name-surname">Namn och Efternamn</label>
+        <input type="text" id="name-surname" placeholder="Charlie Chaplin" required>
+        <label for="username">Anvädarnamn</label>
+        <input type="text" id="name-surname" placeholder="Charlie1889" required>
+        <label for="username">E-postadress</label>
+        <input type="email" name="email" id="username" placeholder="charlie-chaplin@gmail.com" required>
+        <label for="password">Lösenord</label>
+        <input type="password" name="password" id="password" placeholder="**********" required>
+        
+        <label for="password">Repetera Lösenord</label>
+        <input type="password" name="password" id="password" placeholder="**********" required>
+        
+        <div class="membership-container">
+          Välja Medlemskap:
 
+          <input id="membership" type="radio" name="member" value="bas">
+          <label for="bas">Bas</label>
+
+          <input id="membership" type="radio" name="member" value="standard">
+          <label for="standard">Standard</label>
+
+          <input id="membership" type="radio" name="member" value="premium" checked>
+          <label for="premium">Premium</label>
+
+          <input id="membership" type="radio" name="member" value="familje">
+          <label for="familje">Familje</label>
+          <p>Är du osäker på vad ska du välja? klick här <a href="members.html">Medlemskap</a></p> 
+        </div>
+        <div class="create-button">
+          <input type="submit" value="Bli Medlem">
+        </div>      
+  </main>
   <footer class="footer-container">
     <div class="skapare">
       <h2>Sidan skapad av:</h2>
@@ -94,7 +133,7 @@
     </div>
     <div class="kontakta-oss">
       <h2>Välkommen att kontakta oss</h2>
-      <p>Har du frågor eller vill veta mer? Tveka inte att höra av dig!<br>
+      <p>Har du frågor eller vill veta mer? Tveka inte att höra av dig!
         Vi finns här för att hjälpa dig med allt som rör klubben och ditt golfspel.</p>
       <div class="kontakta-img">
       <img src="bilder/location.png" alt="location" class="imgs-footer">
