@@ -40,15 +40,23 @@
     width: 25em;
     height: 2em;
     margin-bottom: 10px;
+    box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
 }
 .login input:nth-of-type(2) {
     width: 25em;
     height: 2em;
     margin-bottom: 10px;
+    box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
+
 }
 .login input:nth-of-type(3) {
     width: 7em;
     height: 2em;
+    box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
+    background-color: green;
+}
+input:focus::placeholder{
+    color: transparent;         /* when u click on the text-box the text/placeholder disappear*/
 }
 .login > p{
     cursor: pointer;
