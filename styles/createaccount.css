@@ -8,20 +8,24 @@
 }
 .createaccount-container{
     display: flex;
+    margin: 2rem;
+    gap: 2rem;
+
+}
+.createaccount-wrapper{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
     font-family: "Merriweather" ;
     font-size: large;
-    max-width: 100%;
-    width: 60%;
-    height: auto;
-    margin: 2rem auto;
-    border: 2px solid black;
+    border: 1px solid black;
+    background-color: var(--Boxwhite);
     border-radius: 1rem;
+    flex: 70%;
 }
-.createaccount-container > input{
-    width: auto;
+.createaccount-wrapper > input{
+    width: 100%;
     height: 3em;
     margin-bottom: 10px;
     box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
@@ -34,10 +38,13 @@ input{
 input:focus::placeholder{
     color: transparent;         /* when u click on on the box the text/placeholder disappear*/
 }
+.membership-container{
+    margin: auto;    
+}
+
 input[type="radio"] {
     accent-color: green;
     cursor: pointer;
-
 }
 
 .create-button{
@@ -57,4 +64,26 @@ input[type="radio"] {
     color: white;
     cursor: pointer;
     border-radius: 5px;
+}
+.members-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 30%;
+    background-color: var(--Boxwhite);
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.member-icon{
+    width: 100px;
+}
+.member-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1em;
 }
