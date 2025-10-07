@@ -55,7 +55,7 @@
 .up{
     grid-area: up;
     text-align: center;
-    background-color: white;
+    background-color: var(--Boxwhite);
     
 }
 .middle-left{
@@ -76,7 +76,7 @@
 }
 .bottom{
     grid-area: bottom;
-    background-color: white;
+    background-color: var(--Boxwhite);
     text-align: center;
 }
 
