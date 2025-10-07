@@ -15,45 +15,59 @@
 .banner-text{
     background-color: white; /* gjorde detta för att texten var inte mycket läsbart på grund av banner. kan ändras sedan om det behövs*/
 }
-
 .login-container{
-    border: 2px solid black;
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.login-info{
+    border: 1px solid black;
+    padding: 1rem;
+    letter-spacing: 1px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
-    font-family: "Merriweather" ;
-    font-size: large;
-    width: 100%;
+    flex: 30%;
+    background-color: var(--Boxwhite);
 }
-.login-container > p{
+.login-form{
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem;
+    font-size: larger;
+    flex: 70%;
+    background-color: var(--Boxwhite);
+}
+.login-form > p{
     font-size: 1.5em;
     font-weight: bold;
     padding-bottom: 2rem;    
 }
 
-.login{
-    font-size: 1.2em;
-}
-.login input:nth-of-type(1) {
-    width: 25em;
-    height: 2em;
-    margin-bottom: 10px;
-    box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
-}
+.login input:nth-of-type(1),
 .login input:nth-of-type(2) {
-    width: 25em;
-    height: 2em;
+    width: 100%;
+    height: 3em;
     margin-bottom: 10px;
     box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
-
+    border-radius: 10px;   
+    padding: 0 0 0 20px;
+    font-size:large;
 }
 .login input:nth-of-type(3) {
     width: 7em;
     height: 2em;
     box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
     background-color: green;
+    cursor: pointer;
+    font-size: large;
+}
+.login input:nth-of-type(3):hover{
+    transform: scale(1.05);
 }
 input:focus::placeholder{
     color: transparent;         /* when u click on the text-box the text/placeholder disappear*/
@@ -63,15 +77,11 @@ input:focus::placeholder{
     font-weight: bold;
     text-decoration: underline;
 }
-.login > p:hover{
-    transform: scale(1.05);
-}
+
 .skapa-konto{
     background-color: rgb(148, 201, 141);
-    margin-top: 4em;
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
-    text-decoration: none;
 }
 .skapa-konto:hover{
     transform: scale(1.05);
