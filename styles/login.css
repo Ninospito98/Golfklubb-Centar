@@ -55,10 +55,8 @@
     margin-bottom: 10px;
     box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
     border-radius: 10px;   
-}
-input{
+    padding: 0 0 0 20px;
     font-size:large;
-    padding: 5px;
 }
 .login input:nth-of-type(3) {
     width: 7em;
@@ -66,6 +64,7 @@ input{
     box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
     background-color: green;
     cursor: pointer;
+    font-size: large;
 }
 .login input:nth-of-type(3):hover{
     transform: scale(1.05);
