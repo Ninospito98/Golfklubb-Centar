@@ -6,6 +6,7 @@
   <title>Boka Tid</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/booking.css">
 </head>
 <body>
   <header class="nav-container">          
@@ -51,6 +52,101 @@
       </ul>
     </nav>
   </header>
+  <section class="banner">
+    <div class="banner-text">
+      <h1>Boka Startid</h1>
+      <h2>Här kan du boka er starttid!</h2>
+    </div>
+  </section>
+  <main class="booking-wrapper">
+    <aside class="booking-aside aside-left">
+      <h2>Viktig Information</h2>
+      <p>Observera att bokningar måste göras minst 24 timmar i förväg. Avbokningar måste göras minst 12 timmar före bokad tid för att undvika avgifter.</p>
+      <p>För gruppbokningar eller speciella önskemål, vänligen kontakta vår reception direkt på 0140-44 45 10 eller via email </p>
+      <h2>Greenfee</h2>
+      <p>Kostnaden för att boka greenfee är 250kr per person för icke medlemmar</p>
+      <p>Om du är medlem, logga in nedan för att boka tid till medlemspris!</p>
+      <a href="login.html" class="login">Logga In</a>
+    </aside>
+    <section class="calendar-section">
+      <h2>Välj Datum och Tid</h2>
+        <fieldset class="booking-fieldset">
+          <form action="#" method="post" class="booking-form">
+            <label for="date">Datum:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Tid: (07:00 - 18:00)</label>
+            <input type="time" id="time" name="time" min="07:00" max="18:00" step="1800" required><span class="validity"></span>
+            
+            <label for="players">Antal Spelare: (1-6)</label>
+            <input type="number" id="players" name="players" min="1" max="6" required>
+
+            <label for="track">Välj bana:</label>
+            <select name="track" class="track" id="track" required onfocus='this.size=4;' onblur='this.size=0;' 
+            onchange='this.size=1; this.blur();'>
+              <option value="">Välj bana</option>
+              <option value="Parkbanan" class="trackselect">Parkbanan</option>
+              <option value="Skogsslingan" class="trackselect">Skogsslingan</option>
+              <option value="Linksbanan" class="trackselect">Linksbanan</option>
+            </select>
+            <button type="submit">Boka Nu</button>
+          </form>
+        </fieldset>
+    </section>
+    <aside class="booking-aside aside-right">
+      <div class="list">
+        <h2>Frågor och svar!</h2>
+        <div class="accordion-menu">
+          
+          <div class="item" id="item1">
+            <a href="#item1" class="title">
+              <span>Vad händer om jag missar min bokade tid?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Tiderna bokas per 30 min, du kan slå ut upp till 15min efter din bokade tid. Därefter måste du boka en ny tid. Betald Greenfee återfås ej vid missad tid.</p>
+          </div>
+          <div class="item" id="item2">
+            <a href="#item2" class="title">
+              <span>Vad händer om jag avbokar inom 12 timmar?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Avbokas tiden inom 12 timmar från bokad tid återbetalas 50% av Greenfee.</p>
+          </div>
+          <div class="item" id="item3">
+            <a href="#item3" class="title">
+              <span>Vad händer om inte alla kommer?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Man kan påbörja sin bokade tid med minst 1 person. Resterande personer kan ansluta till er via våra gångar, men missar de hål som ni redan passerat.</p>
+          </div>
+          <div class="item" id="item4">
+            <a href="#item4" class="title">
+              <span>Vad händer om vi kommer ikapp tidigare grupp?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Om man kommer ikapp en tidigare grupp, får man avvakta för att öka avståndet. annars kan man fråga om ni får gå om den gruppen.</p>
+          </div>
+        </div>
+      </div>
+    </aside>    
+
+    <section class="track-section">
+      <h2>Våra banor</h2>
+      <figure class="aside-figure">
+        <p>Skogslingan</p>
+        <a href="./facilities.html"><img src="./bilder/skog.jpg" alt="Bild på skogslingan" class="aside-img"></a>
+      </figure>
+      <figure class="aside-figure">
+        <p>Parkbanan</p>
+        <a href="./facilities.html"><img src="./bilder/parkbanan.jpg" alt="Bild på parkbanan" class="aside-img"></a>
+      </figure>
+      <figure class="aside-figure">
+        <p>Linksbanan</p>
+        <a href="./facilities.html"><img src="./bilder/linksbanan.jpg" alt="Bild på linksbanan" class="aside-img"></a>
+      </figure>
+
+    </section>
+  </main>
   <footer class="footer-container">
     <div class="skapare">
       <h2>Sidan skapad av:</h2>
