@@ -23,7 +23,7 @@
 
 }
 
-main {
+.members-wrapper {
   display: flex;
   gap: 3rem;
   padding: 2em;
@@ -42,7 +42,7 @@ main {
   padding: 0.5em;
 }
 
-.createaccount-btn{
+/* .createaccount-btn{
   background-color: var(--Bgreen);
   color: white;
   padding: 0.5em 1em;
@@ -50,7 +50,7 @@ main {
   border-radius: 8px;
   cursor: pointer;
   margin-top: 1em;
-}
+} */
 
 .members-container {
   background: var(--Boxwhite);
@@ -81,16 +81,103 @@ main {
 
 }
 
+.members-aside h2{
+  text-align: center;
+  padding: 2rem 0 3rem 0;
+}
+
+.members-aside a{
+  color: var(--Boxwhite);
+  font-weight: bold;
+  background-color: var(--Bgreen);
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 24px;
+  background: #7da64a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.list{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin: auto;
+}
+
+.title {
+ padding: 20px 30px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.icon{
+  width: 20px;
+  position: relative;
+
+}
+
+.icon::before, .icon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  top: -1.5px;
+}
+
+.icon::after {
+  transform: rotate(90deg);
+  transition: 0.5 linear;
+}
+
+.text{
+  opacity: 0;
+  height: 0;
+}
+
+.item:target .text {
+  opacity: 1;
+  height: auto;
+  padding: 10px 10px;
+}
+
+.item:target .icon::after {
+  transform: rotateY(90deg);
+}
+
+@media only screen and (max-width: 1200px) {
+  .members-wrapper {
+  gap: 1em;
+  }
+
+  .member-icon{
+    width: 150px;
+    float: none;
+  }
+}
+
 @media only screen and (max-width: 992px) {
-  main {
+  .members-wrapper {
     flex-direction: column;
     margin: 0;
     padding: 0;
     gap: 0 ;
   }
+
   .members-aside, .members-container {
     flex: 100%;
+    border-top: 1px solid black;
   }
+
   .member-icon{
     width: 150px;
     float: none;
@@ -103,6 +190,7 @@ main {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   }
+  
   .sponsorship{
     grid-column: span 1;
   }
