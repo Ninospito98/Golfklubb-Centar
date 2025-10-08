@@ -1,0 +1,89 @@
+.banner {
+  width: 100%;
+  height: 350px; /* adjust */
+  background: url('/bilder/male-golfer-holding-driver-while-standing-green-course.jpg') no-repeat center center/cover;
+  color: rgb(5, 5, 5);
+  padding-top: 2em;
+  text-align: center;
+}
+.createaccount-container{
+    display: flex;
+    margin: 2rem;
+    gap: 2rem;
+
+}
+.createaccount-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    font-family: "Merriweather" ;
+    font-size: large;
+    border: 1px solid black;
+    background-color: var(--Boxwhite);
+    border-radius: 1rem;
+    flex: 70%;
+}
+.createaccount-wrapper > input{
+    width: 100%;
+    height: 3em;
+    margin-bottom: 10px;
+    box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;   
+}
+input{
+    font-size: large;
+    padding: 10px;
+}
+input:focus::placeholder{
+    color: transparent;         /* when u click on on the box the text/placeholder disappear*/
+}
+.membership-container{
+    margin: auto;    
+}
+
+input[type="radio"] {
+    accent-color: green;
+    cursor: pointer;
+}
+
+.create-button{
+    padding-top: 3rem;
+    margin: auto;
+}
+.create-button:hover{
+    transform: scale(1.05);
+}
+.create-button input{
+    width: 8rem;
+    height: 3rem;
+    font-size: large;
+    font-weight: bold;
+    background-color: green;
+    box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);    
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.members-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 30%;
+    background-color: var(--Boxwhite);
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.member-icon{
+    width: 100px;
+}
+.member-type{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1em;
+}

@@ -6,6 +6,7 @@
   <title>Skapa Konto</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="styles/createaccount.css">
 </head>
 <body>
   <header class="nav-container">          
@@ -39,9 +40,9 @@
         </li>     
         <!-- Dropdown -->
         <li class="has-subnav">
-          <a href="./about.html">Om oss▾</a>
+          <a href="#.html">Om klubben▾</a>
           <ul class="sub-nav">
-            <li><a href="history.html">Om oss</a></li>
+            <li><a href="about.html">Om oss</a></li>
             <li><a href="facilities.html">Banan och Facilititer</a></li>
             <li><a href="members.html">Medlemskap</a></li>
           </ul>
@@ -51,7 +52,75 @@
       </ul>
     </nav>
   </header>
+     <section class="banner">
+    <ul class="button">
+      <p></p>
+    </ul>
+   </section> 
+  <main class="createaccount-container">
+    <aside class="createaccount-info">
+      <div class="members-flex">
+        <div class="member-type">
+          <img src="./bilder/bronzemember.png" alt="Brons medlemskap icon" class="member-icon">
+          <h2>Bas Medlemskap</h2>
+            <p>Tillgång till bas faciliteter</p>
+            <p>5% <b>rabatt</b> i restaurangen och shopen</p>       
+        </div>
+        <div class="member-type">
+          <img src="./bilder/silvermember.png" alt="Silver medlemskap icon" class="member-icon">
+          <h2>Standard Medlemskap</h2>
+          <p>Tillgång till tränings lokaler</p>
+          <p>10% <b>rabatt</b> i restaurangen och shopen</p>       
 
+        </div>
+        <div class="member-type">
+          <img src="./bilder/emeraldmember.png" alt="Emerald medlemskap icon" class="member-icon">
+          <h2>Premium Medlemskap</h2>
+          <p>tillgång till samtliga faciliteter, träning, spa och vipbaren</p>
+          <p>15% <b>rabatt</b> i restaurangen och shopen</p>
+        </div>
+        <div class="member-type">
+          <img src="./bilder/guldmember.png" alt="Guld medlemskap icon" class="member-icon">
+          <h2>Familje Medlemskap</h2>
+          <p>Perfekt för familjer som vill spela tillsammans</p><br><br>
+          <p> <a href="members.html">Klick här</a> <b>för att läsa mer om medlemskap</b></p>
+
+        </div>
+    </aside>
+    <section class="createaccount-wrapper">
+        <h2>Skapa Medlemskap</h2><br>
+        <label for="name-surname">Namn och Efternamn</label>
+        <input type="text" id="name-surname" placeholder="Charlie Chaplin" required>
+        <label for="username">Anvädarnamn</label>
+        <input type="text" id="name-surname" placeholder="Charlie1889" required>
+        <label for="username">E-postadress</label>
+        <input type="email" name="email" id="username" placeholder="charlie-chaplin@gmail.com" required>
+        <label for="password">Lösenord</label>
+        <input type="password" name="password" id="password" placeholder="**********" required>
+        
+        <label for="password">Repetera Lösenord</label>
+        <input type="password" name="password" id="password" placeholder="**********" required>
+        
+        <div class="membership-container">
+          Välja Medlemskap:
+
+          <input id="membership" type="radio" name="member" value="bas">
+          <label for="bas">Bas</label>
+
+          <input id="membership" type="radio" name="member" value="standard">
+          <label for="standard">Standard</label>
+
+          <input id="membership" type="radio" name="member" value="premium" checked>
+          <label for="premium">Premium</label>
+
+          <input id="membership" type="radio" name="member" value="familje">
+          <label for="familje">Familje</label>
+        </div>
+        <div class="create-button">
+          <input type="submit" value="Bli Medlem">
+        </div>  
+    </section>        
+  </main>
   <footer class="footer-container">
     <div class="skapare">
       <h2>Sidan skapad av:</h2>
@@ -88,27 +157,35 @@
           <a href="booking.html">Boka Startid</a>
         </li>
         <li><a href="members.html">Medlemskap</a></li>
-        <li><a href="history.html">Om oss</a></li>
+        <li><a href="about.html">Om oss</a></li>
         <li><a href="login.html">Inloggning</a></li>
+        <li><a href="restaurant.html">Restaurang</a></li>
+        <li><a href="shop.html">Webbshop</a></li>
       </ul>
     </div>
     <div class="kontakta-oss">
       <h2>Välkommen att kontakta oss</h2>
-      <p>Har du frågor eller vill veta mer? Tveka inte att höra av dig!<br>
-        Vi finns här för att hjälpa dig med allt som rör klubben och ditt golfspel.</p>
-      <div class="kontakta-img">
-      <img src="bilder/location.png" alt="location" class="imgs-footer">
-      <p>Datorgatan 6, 561 33 Huskvarna</p>
-      </div>  
+      <ul>
+        <li>
+          <div class="kontakta-img">
+            <img src="bilder/location.png" alt="location" class="imgs-footer">
+            <address>Datorgatan 6, 561 33 Huskvarna</address>
+          </div>  
+        </li>
+        <li>
       <div class="kontakta-img">
       <img src="bilder/viber.png" alt="Telephone" class="imgs-footer">
       <p>0140-44 45 10</p>
       </div>
-      <div class="kontakta-img">
-      <img src="bilder/email.png" alt="email" class="imgs-footer">
-      <p> info@tucsweden.se</p>
-      </div>
-    </div>
+        </li>
+        <li>
+          <div class="kontakta-img">
+            <img src="bilder/email.png" alt="email" class="imgs-footer">
+            <p> info@tucsweden.se</p>
+          </div>
+        </li>
+      </ul>
+    </div>   
     <p id="copywrite">&copy;2025 Sökmotorerna AB</p>
   </footer>
   
