@@ -1,0 +1,205 @@
+.banner{
+  width: 100%;
+  height: 350px; /* adjust */
+  background: url('/bilder/competitions-banner.jpg') no-repeat center /cover;
+
+}
+.welcome{
+    text-align: center;
+    background-color: white;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+.tournaments{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.junior, .senior, .veteran{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+    margin: 2rem;
+    padding:2rem ;
+    width: 100%;
+}
+.tournaments img{
+    max-width: 100%;
+    width: 400px;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+h2{
+    font-size: 1.7rem;
+    padding-bottom: 10px;
+}
+.junior-result, .senior-result, .veteran-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem ;
+    width: 100%;
+}
+table{
+  border-collapse: collapse;
+}
+.result td, .result th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px;
+}
+.result tr:nth-child(odd) {
+  background-color: #58833c;
+}
+.result tr:nth-child(even) {
+  background-color: #8dad72;
+}
+.important-information{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid black;
+}
+.calendar, .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: white;
+    padding: 2rem ;
+    margin: 2rem;
+    width: 100%;
+}
+
+.calendar td, .calendar th {
+  border: 1px solid #000000;
+  text-align: center;
+  padding: 10px;
+}
+.calendar tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+.calendar tr:nth-child(even) {
+  background-color: #cccccc;
+}
+
+/* List */
+.title {
+ padding: 20px 30px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.icon{
+  width: 20px;
+  position: relative;
+
+}
+
+.icon::before, .icon::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  top: -1.5px;
+}
+
+.icon::after {
+  transform: rotate(90deg);
+  transition: 0.5 linear;
+}
+
+.text{
+  opacity: 0;
+  height: 0;
+}
+
+.item:target .text {
+  opacity: 1;
+  height: auto;
+  padding: 10px 10px;
+}
+
+.item:target .icon::after {
+  transform: rotateY(90deg);
+}
+
+.list h2{
+  text-align: center;
+  padding: 2rem 0 3rem 0;
+}
+
+.list a{
+  color: var(--Boxwhite);
+  font-weight: bold;
+  background-color: var(--Bgreen);
+  text-decoration: none;
+}
+
+/* Form */
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: white;
+    padding: 2rem ;
+    margin: 2rem auto;
+    width: 60%;
+}
+.form input{
+    height: 3rem;
+    margin-bottom: 10px;
+    box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;   
+    padding: 0 0 0 20px;
+    font-size:large;
+
+}
+.form label{
+    font-size: large;
+    font-weight: bold;
+    padding: 5px;
+}
+.form select{
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+}
+.form button {
+  background-color: var(--Bgreen);
+  color: white;
+  font-size: 18px;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1em;
+  height: 45px;
+}
+.form button:hover{
+    transform: scale(1.05);
+}
