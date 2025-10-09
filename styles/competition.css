@@ -4,18 +4,21 @@
   background: url('/bilder/competitions-banner.jpg') no-repeat center /cover;
 
 }
+
 .welcome{
     text-align: center;
     background-color: white;
     padding: 2rem;
     margin: 1rem 0;
 }
+
 .tournaments{
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid black;
 }
+
 .junior, .senior, .veteran{
     display: flex;
     flex-direction: column;
@@ -28,20 +31,24 @@
     padding:2rem ;
     width: 100%;
 }
+
 .tournaments img{
     max-width: 100%;
     width: 400px;
 }
+
 .result{
     display: flex;
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid black;
 }
+
 h2{
     font-size: 1.7rem;
     padding-bottom: 10px;
 }
+
 .junior-result, .senior-result, .veteran-result{
     display: flex;
     flex-direction: column;
@@ -55,25 +62,31 @@ h2{
     padding: 2rem ;
     width: 100%;
 }
+
 table{
   border-collapse: collapse;
 }
-.result td, .result th {
+
+.result td, .result th, .tournaments td, .tournaments th {
   border: 1px solid #dddddd;
   text-align: center;
   padding: 10px;
 }
-.result tr:nth-child(odd) {
+
+.result tr:nth-child(odd), .tournaments tr:nth-child(odd) {
   background-color: #58833c;
 }
-.result tr:nth-child(even) {
+
+.result tr:nth-child(even), .tournaments tr:nth-child(even) {
   background-color: #8dad72;
 }
+
 .important-information{
     display: flex;
     justify-content: center;
     border-bottom: 1px solid black;
 }
+
 .calendar, .list{
     display: flex;
     flex-direction: column;
@@ -93,14 +106,17 @@ table{
   text-align: center;
   padding: 10px;
 }
+
 .calendar tr:nth-child(odd) {
   background-color: #ffffff;
 }
+
 .calendar tr:nth-child(even) {
   background-color: #cccccc;
 }
 
 /* List */
+
 .title {
  padding: 20px 30px;
  display: flex;
@@ -156,6 +172,7 @@ table{
 }
 
 /* Form */
+
 .form{
     display: flex;
     flex-direction: column;
@@ -168,6 +185,7 @@ table{
     margin: 2rem auto;
     width: 60%;
 }
+
 .form input{
     height: 3rem;
     margin-bottom: 10px;
@@ -175,13 +193,14 @@ table{
     border-radius: 5px;   
     padding: 0 0 0 20px;
     font-size:large;
-
 }
+
 .form label{
     font-size: large;
     font-weight: bold;
     padding: 5px;
 }
+
 .form select{
     padding: 0.5em;
     border: 1px solid #ccc;
@@ -189,6 +208,7 @@ table{
     text-align: center;
     font-size: 18px;
 }
+
 .form button {
   background-color: var(--Bgreen);
   color: white;
@@ -200,6 +220,118 @@ table{
   margin-top: 1em;
   height: 45px;
 }
+
 .form button:hover{
     transform: scale(1.05);
+}
+
+/* Hidden score */
+
+.btn, .score-btn, #score-toggle1, #score-toggle2, #score-toggle3 {
+  display: none;
+}
+
+.drop-result{
+  display: none;
+}
+
+.small-calendar {
+  display: none;
+}
+
+/* Screen Size */
+
+@media only screen and (max-width: 1200px) {
+
+  .junior, .veteran, .senior, .important-information, .calendar, .list, .big-result, .form {
+    margin: 0;
+    border-radius: 0;
+  }
+  .tournaments, .result {
+    align-items: stretch;
+  }
+  .form-container, .form {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .score-btn{
+    display: block;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 11px 24px;
+    background: #7da64a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  #score-toggle1:checked + .score-btn + .drop-result, #score-toggle2:checked + .score-btn + .drop-result, #score-toggle3:checked + .score-btn + .drop-result {
+    display: flex;
+  }
+  
+  input[name='score-toggle1'] ~ .drop-result, input[name='score-toggle2'] ~ .drop-result, input[name='score-toggle3'] ~ .drop-result {
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+
+  input[name='score-toggle1']:checked ~ .drop-result, input[name='score-toggle2']:checked ~ .drop-result, input[name='score-toggle3']:checked ~ .drop-result {
+    height: 40em;
+    overflow: hidden;
+  }
+
+  .tournaments, .important-information{
+    flex-direction: column;
+  }
+
+  .junior-result, .senior-result, .veteran-result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: white;
+    margin: 2rem;
+    padding: 2rem ;
+    width: 100%;
+    height: 100%;
+  }
+
+  .big-result{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .calendar td, .calendar th {
+    padding: 3px 0;
+  }
+  .welcome, .junior, .senior, .veteran {
+    padding: 2rem 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .calendar {
+    display: none;
+  }
+
+  .small-calendar {
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    gap: 2em;
+  }
+  input[name='score-toggle1']:checked ~ .drop-result, input[name='score-toggle2']:checked ~ .drop-result, input[name='score-toggle3']:checked ~ .drop-result {
+    height: 50em;
+    overflow: hidden;
+  }
 }
