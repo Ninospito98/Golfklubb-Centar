@@ -36,7 +36,7 @@
   justify-content: center;
   align-items: center; */
   /* margin: 2em; */
-  grid-column: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 0.5fr;
   text-align: center;
   padding: 2em;
@@ -67,6 +67,7 @@
   justify-content: center;
   align-items: center;
   padding: 2em;
+  text-align: center;
   /* margin: 2em; */
   background-color: var(--Boxwhite);
   /* grid-row: span 2; */
@@ -150,7 +151,7 @@
 
 .icon::after {
   transform: rotate(90deg);
-  transition: 0.5 linear;
+  transition: 0.5s linear;
 }
 
 .text{
