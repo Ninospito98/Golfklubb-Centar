@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontakt</title>
+  <title>Kontakta oss</title>
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/contact.css">
 </head>
 <body>
   <header class="nav-container">          
@@ -21,7 +22,6 @@
         <li class="logo-holder"></li>
         <li><a href="golfklubb-centar.html">Startsida</a></li>
         <li><a href="booking.html">Boka Startid</a></li>
-        <!-- Dropdown -->
         <li class="has-subnav">
           <a href="#">Event▾</a>
           <ul class="sub-nav">
@@ -29,7 +29,6 @@
             <li><a href="event.html">Evenemang</a></li>
           </ul>
         </li>    
-        <!-- Dropdown -->
         <li class="has-subnav">
           <a href="#.html">Butik▾</a>
           <ul class="sub-nav">
@@ -37,7 +36,6 @@
             <li><a href="shop.html">Shop</a></li>
           </ul>
         </li>     
-        <!-- Dropdown -->
         <li class="has-subnav">
           <a href="#.html">Om klubben▾</a>
           <ul class="sub-nav">
@@ -51,15 +49,107 @@
       </ul>
     </nav>
   </header>
-  <section class="banner">
-    <h1>Kontakta oss</h1>
-    <h2>Vi ser fram emot att höra från dig!</h2>
 
+  <section class="banner">
+    <div class="banner-text">
+      <h1>Kontakt och besök</h1>
+    </div>
   </section>
-  <main class="start-wrapper">
-      <p>Har du frågor eller vill veta mer? Tveka inte att höra av dig!<br> Vi finns här för att hjälpa dig med allt som rör klubben och ditt golfspel.</p>
+
+  <main class="contact-wrapper">
+    <aside class="contact-aside aside-left">
+      <div class="list">
+        <h2>Frågor och svar!</h2>
+        <div class="accordion-menu">
+          <div class="item" id="item1">
+            <a href="#item1" class="title">
+              <span>Hur kontaktar jag barnskötaren?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Du kan kontakta Jerome Gordon Bock, på telefonnummret 017-033 57 03 Detta gäller 08:00-17:00</p>
+          </div>
+          <div class="item" id="item2">
+            <a href="#item2" class="title">
+              <span>Om jag har ett problem i restaurangen?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Vänligen kontakta vår restaurangchef Ninos Pito, på telefonnummret 017-033 58 03 eller via mejl på ninosrestaurang@golfcentar.se</p>
+          </div>
+          <div class="item" id="item3">
+            <a href="#item3" class="title">
+              <span>Vad gör jag om jag har ett problem med en arbetare?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Välkommen att kontakta personalchefen Saimonas Klietkus, på telefonnummret 017-333 69 03 Detta gäller 09:00-18:00</p>
+          </div>
+          <div class="item" id="item4">
+            <a href="#item4" class="title">
+              <span>Jag vill sponsra er, hur gör jag det?</span>
+              <i class="icon"></i>
+            </a>
+            <p class="text">Om man önskar att sponsra oss, vänligen vända er mot vår marketing team via mejl centarmarketing@golfcentar.se</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="contact-container">
+      <div class="map-section">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2125.4739373131753!2d14.287979076450228!3d57.78954747396332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465a73ad9e6765ab%3A0xa0b7c529b41c70a9!2sDatorgatan%206%2C%20561%2033%20Huskvarna!5e0!3m2!1ssv!2sse!4v1716050000000!5m2!1ssv!2sse" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+          <div class="contact-info">
+        <div>
+          <h3>Adress</h3>
+          <p>Datorgatan 6<br>561 33 Huskvarna</p>
+        </div>
+        <div>
+          <h3>Telefon</h3>
+          <p>0140-44 45 10</p>
+        </div>
+        <div>
+          <h3>E-post</h3>
+          <p>info@tucsweden.se</p>
+        </div>
+        <div>
+          <h3>Öppettider</h3>
+          <ul>
+            <li>Mån–Fre: 08:00–18:00</li>
+            <li>Lör: 09:00–15:00</li>
+            <li>Sön: Stängt</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <aside class="contact-aside aside-right">
+      <div>
+        <h2>Kontakta oss vid frågor & feedback</h2>
+        <form class="feedback-form">
+          <label for="name">Namn:</label><br>
+          <input type="text" id="name" name="name" placeholder="Skriv ditt namn" required=""><br><br>
+
+          <label for="email">E-post:</label><br>
+          <input type="email" id="email" name="email" placeholder="Skriv din e-post" required=""><br><br>
+
+          <label for="message">Meddelande:</label><br>
+          <textarea id="message" name="message" rows="20" placeholder="Skriv ditt meddelande" required=""></textarea><br><br>
+
+          <button type="button" class="btn">Skicka</button>
+        </form>
+      </div>
+    </aside>
   </main>
-  <footer class="footer-container">
+
+ <footer class="footer-container">
     <div class="skapare">
       <h2>Sidan skapad av:</h2>
       <ul>
@@ -95,7 +185,7 @@
           <a href="booking.html">Boka Startid</a>
         </li>
         <li><a href="members.html">Medlemskap</a></li>
-        <li><a href="about.html">Om oss</a></li>
+        <li><a href="history.html">Klubbens Historia</a></li>
         <li><a href="login.html">Inloggning</a></li>
         <li><a href="restaurant.html">Restaurang</a></li>
         <li><a href="shop.html">Webbshop</a></li>
@@ -126,6 +216,5 @@
     </div>   
     <p id="copywrite">&copy;2025 Sökmotorerna AB</p>
   </footer>
-  
 </body>
 </html>
