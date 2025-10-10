@@ -241,9 +241,10 @@ select option:checked{
   padding-left: 5px;
 }
 
-.booking-form button {
+.btn {
   background-color: var(--Bgreen);
   color: white;
+  text-align: center;
   font-size: 18px;
   padding: 0.5em 1em;
   border: none;
@@ -252,6 +253,7 @@ select option:checked{
   margin-top: 1em;
   height: 45px;
   grid-column: span 2;
+  text-decoration: none;
 }
 
 /* Screen Sizes */

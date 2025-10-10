@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/nav.css">
   <link rel="stylesheet" href="./styles/booking.css">
+  <link rel="icon" href="./bilder/logos/favicon.ico">
 </head>
 <body>
   <header class="nav-container">          
@@ -71,7 +72,7 @@
     <section class="calendar-section">
       <h2>Välj Datum och Tid</h2>
         <fieldset class="booking-fieldset">
-          <form action="#" method="post" class="booking-form">
+          <form action="./bookingconfirm.html" method="get" class="booking-form">
             <label for="date">Datum:</label>
             <input type="date" id="date" name="date" required>
             
@@ -89,7 +90,9 @@
               <option value="Skogsslingan" class="trackselect">Skogsslingan</option>
               <option value="Linksbanan" class="trackselect">Linksbanan</option>
             </select>
-            <button type="submit">Boka Nu</button>
+            <label for="email">Epost:</label>
+            <input type="email" id="email" name="email" placeholder="exampel@exempel.se" required>
+            <button type="submit" class="btn">Boka Nu</button>
           </form>
         </fieldset>
     </section>
