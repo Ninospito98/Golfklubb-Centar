@@ -19,3 +19,117 @@
 .banner-text h1 {
   font-size: 5em;
 }
+
+.event-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.welcome {
+  padding-top: 2rem;
+  background: var(--Boxwhite);
+  grid-column: span 3;
+  text-align: center;
+}
+
+.event-box {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  background: var(--Boxwhite);
+  padding: 2rem;
+  border: 1px solid black;
+}
+
+.event-box img {
+  max-width: 100%;
+  width: 400px;
+}
+
+.event-calendar td, .event-calendar th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 10px;
+}
+
+.event-calendar tr:nth-child(odd), .event-calendar tr:nth-child(odd) {
+  background-color: #58833c;
+}
+
+.event-calendar tr:nth-child(even), .event-calendar tr:nth-child(even) {
+  background-color: #8dad72;
+}
+
+/* dropdown event lists */
+
+.btn, .event-btn, #event-toggle1, #event-toggle2, #event-toggle3 {
+  display: none;
+}
+
+.dropdown-event{
+  display: none;
+}
+
+/* large screens  */
+
+@media screen and (max-width: 1200px) {
+  .event-wrapper {
+    margin: 0;
+    margin-top: 10px;
+    gap: 0;
+  }
+    
+}
+
+@media screen and (max-width: 992px) {
+  .event-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+   .event-btn{
+    display: block;
+  }
+
+  .junior-calendar, .calendar, .family-calendar{
+    display: none;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 11px 24px;
+    background: #7da64a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+
+
+  #event-toggle1:checked + .event-btn + .dropdown-event, #event-toggle2:checked + .event-btn + .dropdown-event, #event-toggle3:checked + .event-btn + .dropdown-event {
+    display: flex;
+  }
+  
+  input[name='event-toggle1'] ~ .dropdown-event, input[name='event-toggle2'] ~ .dropdown-event, input[name='event-toggle3'] ~ .dropdown-event {
+    height: 0;
+    overflow:hidden;
+    transition: all 1s ease;
+    border: none;
+  }
+
+  input[name='event-toggle1']:checked ~ .dropdown-event, input[name='event-toggle2']:checked ~ .dropdown-event, input[name='event-toggle3']:checked ~ .dropdown-event {
+    height: 25em;
+    overflow: hidden;
+  }
+
+  .dropdown-event {
+    flex-direction: column;
+  }
+  
+}
