@@ -277,7 +277,7 @@ table{
   
   input[name='score-toggle1'] ~ .drop-result, input[name='score-toggle2'] ~ .drop-result, input[name='score-toggle3'] ~ .drop-result {
     height: 0;
-    overflow: hidden;
+    overflow:hidden;
     transition: all 1s ease;
     border: none;
   }
@@ -285,6 +285,8 @@ table{
   input[name='score-toggle1']:checked ~ .drop-result, input[name='score-toggle2']:checked ~ .drop-result, input[name='score-toggle3']:checked ~ .drop-result {
     height: 40em;
     overflow: hidden;
+    border: 1px solid black;
+    /* padding: 2rem; */
   }
 
   .tournaments, .important-information{
