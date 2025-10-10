@@ -23,19 +23,12 @@
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows:  1fr 0.5fr;
-  /* justify-content: center;
-  align-items: center; */
   margin: 2em;
   gap: 2em;
 }
 
 .track-section{
-  /* flex: 50%; */
   display: grid;
-  /* flex-direction: row;
-  justify-content: center;
-  align-items: center; */
-  /* margin: 2em; */
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 0.5fr;
   text-align: center;
@@ -50,12 +43,10 @@
 }
 
 .calendar-section{
-  /* flex: 50%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* margin: 2em; */
   padding: 2em;
   background-color: var(--Boxwhite);
 }
@@ -68,9 +59,7 @@
   align-items: center;
   padding: 2em;
   text-align: center;
-  /* margin: 2em; */
   background-color: var(--Boxwhite);
-  /* grid-row: span 2; */
 }
 
 .aside-figure{
@@ -180,11 +169,6 @@
 }
 
 .booking-form{
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; */
   display: grid;
   grid-template-columns: 3fr 0.2fr;
   grid-template-rows: auto auto auto auto;
@@ -223,9 +207,7 @@ select option:checked{
 .validity {
   display: inline-flex;
   align-items: center;
-  justify-content: start;  
-  /* position: relative;
-  display: inline-block; */
+  justify-content: start;
   width: 100%;
 }
 
@@ -258,6 +240,7 @@ select option:checked{
 
 /* Screen Sizes */
 
+/* larger screens from 1200px down */
 @media only screen and (max-width: 1200px) {
   .booking-wrapper{
     display: flex;
@@ -276,6 +259,7 @@ select option:checked{
   
 }
 
+/* Medium and small screens 992px and down */
 @media only screen and (max-width: 992px) {
   .booking-wrapper{
     margin: 0;
@@ -292,6 +276,7 @@ select option:checked{
   }
 }
 
+/* Small screens 600px and down */
 @media only screen and (max-width: 600px) {
   .track-section {
     display: flex;
