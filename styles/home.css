@@ -92,6 +92,8 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* larger screens from 1200px down */
+
 @media only screen and (min-width: 1200px) {
   .start-wrapper {
     gap: 1.5em;
@@ -115,8 +117,8 @@
   }
 }
 
+/* Medium and small screens 992px and down */
 @media only screen and (max-width: 768px) {
-
   .start-wrapper {
     display: flex;
     flex-direction: column;
@@ -125,12 +127,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
-
 }
 
+/* Small screens 600px and down */
 @media only screen and (max-width: 600px) {
  .news-grid {
   padding: 0;
  }
-  
 }

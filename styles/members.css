@@ -42,16 +42,6 @@
   padding: 0.5em;
 }
 
-/* .createaccount-btn{
-  background-color: var(--Bgreen);
-  color: white;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 1em;
-} */
-
 .members-container {
   background: var(--Boxwhite);
   padding: 1em;
@@ -78,7 +68,6 @@
 
 .sponsorship{
   grid-column: span 2;
-
 }
 
 .members-aside h2{
@@ -154,6 +143,7 @@
   transform: rotateY(90deg);
 }
 
+/* larger screens from 1200px down */
 @media only screen and (max-width: 1200px) {
   .members-wrapper {
   gap: 1em;
@@ -165,6 +155,8 @@
   }
 }
 
+/* Medium and small screens 992px and down */
+
 @media only screen and (max-width: 992px) {
   .members-wrapper {
     flex-direction: column;
@@ -172,18 +164,17 @@
     padding: 0;
     gap: 0 ;
   }
-
   .members-aside, .members-container {
     flex: 100%;
     border-top: 1px solid black;
   }
-
   .member-icon{
     width: 150px;
     float: none;
   }
-
 }
+
+/* Small screens 600px and down */
 
 @media only screen and (max-width: 600px) {
   .members-grid {
