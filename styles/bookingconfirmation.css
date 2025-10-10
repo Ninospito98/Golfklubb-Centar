@@ -1,0 +1,50 @@
+.banner{
+  width: 100%;
+  height: 350px; /* adjust */
+  background: url('/bilder/bookingbanner.png') no-repeat center 70%/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(8, 8, 8);
+  text-align: center;
+  padding-top: 2em;
+  text-align: center;
+}
+
+.banner-text{
+  background: rgb(242, 242, 233, 0.6);
+  border-radius: 8px;
+}
+
+.bookingconfirm-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+.bookingconfirm-box{
+  background: var(--Boxwhite);
+  padding: 2rem;
+  text-align: center;
+}
+
+.bookingconfirm-box p {
+  margin-bottom: 10px;
+}
+
+
+.btn {
+  background-color: var(--Bgreen);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 2em;
+  height: 45px;
+  grid-column: span 2;
+  text-decoration: none;
+}
