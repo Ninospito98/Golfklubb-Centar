@@ -17,22 +17,26 @@
 }
 
 .banner-text h1 {
-  font-size: 5em;
+  font-size: 3rem;
 }
 
 .event-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 0.75fr 1fr;
   gap: 2rem;
   margin: 2rem;
 }
 
 .welcome {
-  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0;
   background: var(--Boxwhite);
   grid-column: span 3;
   text-align: center;
+  
 }
 
 .event-box {
@@ -49,6 +53,16 @@
 .event-box img {
   max-width: 100%;
   width: 400px;
+}
+
+.junior-event p, .event-for-all p, .family-event p, .junior-event h2, .event-for-all h2, .family-event h2 {
+  margin-top: 15px;
+}
+
+.event-box img:hover {
+  box-shadow: 0 0 10px 5px var(--Bgreen);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .event-calendar td, .event-calendar th {
@@ -75,7 +89,7 @@
   display: none;
 }
 
-/* large screens  */
+/* larger screens from 1200px down */
 
 @media screen and (max-width: 1200px) {
   .event-wrapper {
@@ -86,10 +100,20 @@
     
 }
 
+/* Medium and small screens 992px and down */
+
 @media screen and (max-width: 992px) {
   .event-wrapper{
     display: flex;
     flex-direction: column;
+  }
+
+  .welcome{
+    padding: 2rem 5px 2rem 5px;
+  }
+
+  .event-box{
+    padding: 0 5px 2rem 5px;
   }
 
    .event-btn{
@@ -110,8 +134,6 @@
     font-size: 16px;
   }
 
-
-
   #event-toggle1:checked + .event-btn + .dropdown-event, #event-toggle2:checked + .event-btn + .dropdown-event, #event-toggle3:checked + .event-btn + .dropdown-event {
     display: flex;
   }
@@ -130,6 +152,7 @@
 
   .dropdown-event {
     flex-direction: column;
+    margin-top: 15px;
   }
   
 }
