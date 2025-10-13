@@ -183,8 +183,8 @@ table{
     background-color: white;
     padding: 2rem ;
     margin: 2rem auto;
-    width: 60%;
-}
+    width: 50%;
+  }
 
 .form input{
     height: 3rem;
@@ -207,7 +207,7 @@ table{
     border-radius: 4px;
     text-align: center;
     font-size: 18px;
-}
+  }
 
 .form button {
   background-color: var(--Bgreen);
@@ -337,4 +337,10 @@ table{
     height: 50em;
     overflow: hidden;
   }
+  
+@media only screen and (max-width: 320px){
+  .form, .form-container, .tournaments, .result, .small-calendar{
+  padding: 0;
+  margin: 0;}
+}  
 }
