@@ -1,26 +1,5 @@
-
 .banner {
-  text-align: center;
-  background: var(--Boxwhite);
-}
-
-.banner {
-  width: 100%;
-  height: 350px; /* adjust */
   background: url('/bilder/banner-member.png') no-repeat  center 20%/cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rgb(8, 8, 8);
-  text-align: center;
-  padding-top: 2em;
-  /* color: var(--Bgreen); */
-}
-
-.banner-text{
-  background: rgb(242, 242, 233, 0.6);
-  border-radius: 8px;
-
 }
 
 .members-wrapper {
