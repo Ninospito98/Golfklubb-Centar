@@ -115,3 +115,30 @@ img{
 .shop-content-horisontell .product{
     background-color: rgb(243, 247, 243);
 }
+
+@media screen and (max-width: 992px) {
+  .shop-container, .content-horisontell {
+    margin: 0;
+  }
+
+  .shop-content {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(9, 1fr);
+    gap: 1rem;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .shop-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(18, 1fr);
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .sorts {
+    position:static ;
+    margin-top: 2rem;
+  }
+}
