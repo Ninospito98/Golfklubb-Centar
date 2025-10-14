@@ -57,3 +57,25 @@
     padding: 1rem;
     background: url('/bilder/menu-drinks.jpeg') no-repeat center center/cover;
 }
+
+@media screen and (max-width: 992px) {
+  .restaurant-menu, .drinks-menu {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .restaurant-menu, .drinks-menu {
+    grid-template-columns: 1fr;
+    grid-template-rows:repeat(5, 1fr);
+    padding: 2rem 0;
+    gap: 2rem;
+    text-align: center;
+  }
+  .button {
+    flex-direction: column;
+  }
+}
