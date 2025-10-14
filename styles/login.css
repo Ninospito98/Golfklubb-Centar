@@ -86,3 +86,22 @@ input:focus::placeholder{
 .skapa-konto:hover{
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 992px) {
+  .login-container{
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .login-container {
+    margin: 0;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .login-form, .login-info {
+    padding: 5px;
+  }
+}

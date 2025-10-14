@@ -86,21 +86,33 @@
     list-style-type: none;
     padding: 5px;
 }
-@media (max-width:802px){
+@media (max-width:992px){
     .grid-container{
         display: flex;
         flex-direction: column
         ;
     }
 }
-@media (max-width:345px){
-   .grid-container{
+
+@media screen and (max-width: 756px) {
+  .grid-container{
     padding: 0;
     margin: 0;
-   }
-   .banner{
+    gap: 0;
+  }
+  .grid-container div{
+    border-radius: 0;
+  }
+  .banner{
     margin-bottom: 1rem;
-   } 
+  } 
+}
+@media (max-width:345px){
+  .grid-container div{
+    padding: 5px;
+  }
+
+
    .banner a{
     width: auto;
    }
