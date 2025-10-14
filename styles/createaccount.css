@@ -87,3 +87,22 @@ input[type="radio"] {
     border-radius: 8px;
     padding: 1em;
 }
+
+@media screen and (max-width: 992px) {
+  .createaccount-container{
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .createaccount-container {
+    margin: 0;
+    gap: 0;
+  }
+  .createaccount-wrapper, .members-flex {
+    border-radius: 0;
+  }
+}
+
+
+  
