@@ -40,8 +40,9 @@
     margin-top: 3rem;
     text-align: center;
     /* Här skapar jag en scroll så vi kan lägga mer produkter utan att den ta så mycket plats i skärmen*/
-    max-height: 850px;   /* begränsa höjden på galleriet */
+    max-height: 900px;   /* begränsa höjden på galleriet */
     overflow-y: auto;    /* aktivera vertikal scroll */
+    scroll-behavior: smooth;
     padding: 10px;
 
 }
@@ -49,7 +50,6 @@
     position: absolute;
     top: 7rem;
     right: 2rem;
-    font-weight: bold;
 }
 img{
     width: 300px;
@@ -97,6 +97,7 @@ img{
     grid-template-columns:1fr ;
     grid-auto-flow: column;
     overflow-x: auto;             /* aktivera horisontell scroll */
+    scroll-behavior: smooth;
     padding:2rem 0;
     max-width: 1500px;             /* bredden som rymmer ca 4 produkter */
     margin: auto;  

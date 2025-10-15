@@ -62,43 +62,43 @@
 
     <main class="login-container">
       <aside class="login-info">
-        <h2>Varför ska du logga in ?</h2><br>
+        <h2>Varför ska du logga in ?</h2>
         <p>Genom att logga in får du tillgång till exklusivt innehåll och tjänster som är
             skrädarsydda för våra medlemmar. Här hittar du de senaste klubbnyheterna,
             kommande event och speciella medlemsförmåner som inte är tillgängliga för
             gäster.
-        </p><br>
+        </p>
         <p>
           Du kan enkelt boka speltider, se dina tidigare bokningar och hantera dina
           reservationer direkt online. Dessutom får du tillgång till vårt interna forum
           där medlemmar kan utbyta erfarenheter, tips och idéer för att göra ditt
           klubbliv ännu rikare.
-        </p><br>
+        </p>
         <p>
           Som inloggad medlem blir du alltid först med att ta del av nyheter, rabatter på
           utrustning, restaurangerbjudanden och inbjudningar till exklusiva
           medlemsevenemang. Kort sagt, att logga in öppnar dörren till hela
           Golfklubb Centars gemenskap och alla de möjligheter som väntar.
-        </p><br>
-        <p> <a href="members.html">Klick här</a> <b>för att läsa mer om medlemskap</b></p>
+        </p>
+        <p> <a href="members.html">Klick här</a> <span class="bold">för att läsa mer om medlemskap</span></p>
       </aside>
 
       <section class="login-form">
-        <p>Fyll i dina uppgifter för att logga in</p>
+        <h2>Fyll i dina uppgifter för att logga in</h2>
         <div class="login">
-            <label for="username">E-postadress eller Anvädarnamn</label><br>
-            <input type="email" name="email" id="username" placeholder="exempel@gmail.com" required><br>
-            <label for="password">Lösenord</label><br>
+            <label for="username">E-postadress eller Anvädarnamn</label>
+            <input type="email" name="email" id="username" placeholder="exempel@gmail.com" required>
+            <label for="password">Lösenord</label>
             <input type="password" name="password" id="password" placeholder="*************" required>
-            <br>
+            
             <input type="submit" value="Logga in" class="btn">
             <input type="checkbox"> Kom ihåg mig!
-            <br><br>
+            
             <p>Glömt ditt lösenord?</p>
-            <div class="skapa-konto">
-                <p>Är du inte en medlem ?</p>
-                <a href="createaccount.html" class>Skapa konto</a>
-            </div>
+              <form action="createaccount.html" method="get" class="skapa-konto">
+                <p><span class="bold">Är du inte en medlem ?</span></p>
+                <button class="btn">Skapa Konto</button>
+              </form>
         </div>
       </section>  
     </main>
