@@ -1,7 +1,7 @@
 .banner {
   width: 100%;
   height: 350px; /* adjust */
-  background: url('/bilder/salmon-with-ingredients-table.jpg') no-repeat center center/cover;
+  background: url('/bilder/restaurant/salmon-with-ingredients-table.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +34,7 @@
 .table-wrapper{
     display: flex;
     justify-content: start;
-    background: url('/bilder/tasty-bruschetta-raw-farfalle-pasta-fresh-ingredients-isolated-white-background.jpg') no-repeat center center/cover;
+    background: url('/bilder/restaurant/tablebooking-bkg1.jpg') no-repeat center center/cover;
 }
 .booking-fieldset h2{
     display: flex;
