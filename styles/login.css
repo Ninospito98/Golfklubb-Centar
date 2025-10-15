@@ -26,20 +26,19 @@
     flex: 30%;
     background-color: var(--Boxwhite);
 }
+.login-info p{
+  padding: 1rem;
+}
 .login-form{
     border-left: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 3rem;
+    gap: 3rem;
     font-size: larger;
     flex: 70%;
     background-color: var(--Boxwhite);
-}
-.login-form > p{
-    font-size: 1.5em;
-    font-weight: bold;
-    padding-bottom: 2rem;    
 }
 
 .login input:nth-of-type(1),
@@ -60,26 +59,30 @@
     cursor: pointer;
     font-size: large;
 } */
-.login input:nth-of-type(3):hover{
-    transform: scale(1.05);
-}
+ 
 input:focus::placeholder{
     color: transparent;         /* when u click on the text-box the text/placeholder disappear*/
 }
 .login > p{
     cursor: pointer;
-    font-weight: bold;
     text-decoration: underline;
+    padding-top: 1rem;
 }
-
 .skapa-konto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+}
+/* .skapa-konto{
     background-color: rgb(148, 201, 141);
     border: 1px solid rgb(0, 0, 0);
     text-align: center;
 }
 .skapa-konto:hover{
     transform: scale(1.05);
-}
+} */
 
 @media screen and (max-width: 992px) {
   .login-container{
