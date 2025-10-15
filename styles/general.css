@@ -3,8 +3,11 @@
 :root {
   --Bgreen: rgb(137, 172, 70);
   --Boxwhite: #f1f1e7;
+  --Bkggreen : #B0DB9C;
+  --Detailsgreen: #79c776;
 }
-
+/* B0DB9C
+ddf6d2 */
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +15,7 @@
 }
 
 body {
-  background: var(--Bgreen);
+  background: var(--Bkggreen);
   max-width: 100%;
   width: 100vw;
   height: 100vh;
