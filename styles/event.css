@@ -63,7 +63,7 @@
 
 /* dropdown event lists */
 
-.btn, .event-btn, #event-toggle1, #event-toggle2, #event-toggle3 {
+.hidden-btn, .event-btn, #event-toggle1, #event-toggle2, #event-toggle3 {
   display: none;
 }
 
@@ -108,12 +108,6 @@
 
   .btn {
     display: inline-block;
-    padding: 11px 24px;
-    background: #7da64a;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
   }
 
   #event-toggle1:checked + .event-btn + .dropdown-event, #event-toggle2:checked + .event-btn + .dropdown-event, #event-toggle3:checked + .event-btn + .dropdown-event {

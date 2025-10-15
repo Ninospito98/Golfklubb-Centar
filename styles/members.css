@@ -38,6 +38,7 @@
   width: 150px;
   float: left;
 }
+
 .member-type, .sponsorship{
   border: 1px solid black;
   border-radius: 8px;
@@ -63,12 +64,6 @@
 
 .btn {
   display: inline-block;
-  padding: 11px 24px;
-  background: #7da64a;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px;
 }
 
 .list{

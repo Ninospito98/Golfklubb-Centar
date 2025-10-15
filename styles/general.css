@@ -35,6 +35,7 @@ main, main > div, main > article, main > section, main > aside {
   text-align: center;
   padding-top: 2em;
   text-align: center;
+  position: relative;
 }
 
 .banner-text{
@@ -46,13 +47,34 @@ main, main > div, main > article, main > section, main > aside {
   font-size: 3rem;
 }
 
+/* Button */
+.btn {
+  background-color: var(--Bgreen);
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1em;
+  height: 45px;
+  grid-column: span 2;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #5c7d36;
+}
+
+
 /* #footer */
+
 .footer-container{
   background-color: var(--Boxwhite);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   padding: 2em;
-  /* background: url('footer.jpg')no-repeat center center/cover ; */
 }
 
 .skapare a{
@@ -103,6 +125,8 @@ main, main > div, main > article, main > section, main > aside {
 .imgs-footer{
   width: 25px;
 }
+
+/* screensizes */
 
 @media only screen and (max-width: 1200px) {
   .footer-container{
