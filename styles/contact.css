@@ -65,20 +65,6 @@
   resize: none;
 }
 
-.feedback-form button {
-  background: #7da64a;
-  color: white;
-  font-size: 18px;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.feedback-form button:hover {
-  background: #5c7d36;
-}
-
 .contact-info {
   display: flex;
   flex-wrap: wrap;
