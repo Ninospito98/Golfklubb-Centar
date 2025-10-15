@@ -68,8 +68,11 @@ main, main > div, main > article, main > section, main > aside {
 
 .btn:hover {
   background: #5c7d36;
+  transform: scale(1.05);
 }
-
+.bold{
+  font-weight: bold;
+}
 
 /* #footer */
 
