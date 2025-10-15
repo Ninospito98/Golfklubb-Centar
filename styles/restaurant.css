@@ -1,7 +1,7 @@
 .banner {
   width: 100%;
   height: 450px; /* adjust */
-  background: url('/bilder/restaurant-banner.jpg') no-repeat center center/cover;
+  background: url('/bilder/banners/restaurant-banner.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,12 +60,12 @@
 }
 .middle-left{
     grid-area: middle-left;
-    background: url('/bilder/restaurant-breakfast.jpg') no-repeat center center/cover;
+    background: url('/bilder/restaurant/restaurant-breakfast.jpg') no-repeat center center/cover;
 
 }
 .middle-right{
     grid-area: middle-right;
-    background: url('/bilder/restaurant-lunch.jpg') no-repeat center center/cover;
+    background: url('/bilder/restaurant/restaurant-lunch.jpg') no-repeat center center/cover;
 
 
 }
