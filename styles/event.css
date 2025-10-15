@@ -1,23 +1,5 @@
 .banner{
-  width: 100%;
-  height: 350px; /* adjust */
-  background: url('/bilder/construction-banner.png') no-repeat center 70%/cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rgb(8, 8, 8);
-  text-align: center;
-  padding-top: 2em;
-  text-align: center;
-}
-
-.banner-text{
-  background: rgb(242, 242, 233, 0.6);
-  border-radius: 8px;
-}
-
-.banner-text h1 {
-  font-size: 3rem;
+  background: url('/bilder/banners/flygbild.png') no-repeat center 80%/cover;
 }
 
 .event-wrapper{
@@ -81,7 +63,7 @@
 
 /* dropdown event lists */
 
-.btn, .event-btn, #event-toggle1, #event-toggle2, #event-toggle3 {
+.hidden-btn, .event-btn, #event-toggle1, #event-toggle2, #event-toggle3 {
   display: none;
 }
 
@@ -126,12 +108,6 @@
 
   .btn {
     display: inline-block;
-    padding: 11px 24px;
-    background: #7da64a;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
   }
 
   #event-toggle1:checked + .event-btn + .dropdown-event, #event-toggle2:checked + .event-btn + .dropdown-event, #event-toggle3:checked + .event-btn + .dropdown-event {

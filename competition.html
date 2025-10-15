@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="nav-container">          
-    <img class="nav-logo" src="./bilder/logos/logo-simple.png" alt="logo image">
+    <a href="index.html"><img class="nav-logo" src="./bilder/logos/logo-text.png" alt="logo image"></a>
     <nav class="main-nav">
       <input type="checkbox" name="menu-toggle" id="menu-toggle">
       <label for="menu-toggle" class="hamburger-menu">
@@ -21,7 +21,7 @@
       </label>
       <ul class="menu">
         <li class="logo-holder"></li>
-        <li><a href="golfklubb-centar.html">Startsida</a></li>
+        <!-- <li><a href="index.html">Startsida</a></li> -->
         <li><a href="booking.html">Boka Startid</a></li>
         <!-- Dropdown -->
         <li class="has-subnav">
@@ -72,7 +72,7 @@
 
   <main class="tournaments">
     <div class="junior">
-      <img src="/bilder/competitions-juniors.jpg" alt="picture of kids playing golf">
+      <img src="/bilder/competition/competitions-juniors.jpg" alt="picture of kids playing golf">
       <h2>Junior Cup (U18)</h2>
       <p>
         Junior Cup är framtidens golftävling! Här får våra unga medlemmar chansen att testa sina färdigheter och växa både som spelare och lagkamrater.
@@ -82,7 +82,7 @@
       </p>
       <input type="checkbox" name="score-toggle1" id="score-toggle1">
       <label for="score-toggle1" class="score-btn">
-      <span class="btn">Senaste resultat</span>
+      <span class="hidden-btn btn">Senaste resultat</span>
       </label>
       <div class="drop-result junior-result">
         <h2>Junior Cup 2025 - Top 10</h2>
@@ -147,7 +147,7 @@
       </div>
     </div>
     <div class="senior">
-      <img src="/bilder/competitions-seniors.jpg" alt="picture of seniors playing golf">
+      <img src="/bilder/competition/competitions-seniors.jpg" alt="picture of seniors playing golf">
       <h2>Senior Open (18-59 år)</h2>
       <p>
         Senior Open är klubbens mest populära tävling, där passionen för golf möter tävlingsinstinkt.
@@ -158,7 +158,7 @@
       </p>
       <input type="checkbox" name="score-toggle2" id="score-toggle2">
       <label for="score-toggle2" class="score-btn">
-        <span class="btn">Senaste resultat</span>
+        <span class="hidden-btn btn">Senaste resultat</span>
       </label>
       <div class="drop-result senior-result">
         <h2>Senior Open 2025 - Top 10</h2>
@@ -223,7 +223,7 @@
       </div>
     </div>
     <div class="veteran">
-      <img src="/bilder/competitions-veteren.jpg" alt="picture of veterans playing golf">
+      <img src="/bilder/competition/competitions-veteren.jpg" alt="picture of veterans playing golf">
       <h2>Veteran Challenge (60+)</h2>
       <p>
         Erfarenhet möter elegans i Veteran Challenge.
@@ -236,7 +236,7 @@
       </p>
       <input type="checkbox" name="score-toggle3" id="score-toggle3">
       <label for="score-toggle3" class="score-btn">
-      <span class="btn">Senaste resultat</span>
+      <span class="hidden-btn btn">Senaste resultat</span>
       </label>
      <div class="drop-result veteran-result">
       <h2>Veteran Challenge 2025 - Top 10</h2>
@@ -709,7 +709,7 @@
         <p>Övriga Information:</p>
         <textarea name="comments" cols="30" rows="4"></textarea>
 
-        <button type="submit">Skicka Ansökan</button>
+        <button type="submit" class="btn">Skicka Ansökan</button>
         </form>
       </fieldset>
   </section>
