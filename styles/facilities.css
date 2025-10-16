@@ -1,13 +1,5 @@
-.facilities-banner {
+.banner {
   background: url('/bilder/banners/flygbild.png') no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-family: 'Merriweather', serif;
-  font-size: 48px; 
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
-  height: 300px; 
 }
 
 .facility-grid {
