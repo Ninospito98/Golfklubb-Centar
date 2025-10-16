@@ -1,5 +1,6 @@
 .banner {
   background: url('/bilder/banners/menu-banner.jpg') no-repeat center center/cover;
+  justify-content: center;
 
 }
 .banner .button{
