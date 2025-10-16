@@ -24,8 +24,12 @@ body {
   font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main, main > div, main > article, main > section, main > aside {
+main, main > div, main > article, main > section, main > aside, .welcome {
   border-radius: 8px;
+}
+
+main > div, main > article, main > section, main > aside, .welcome {
+  border: 1px solid black;
 }
 
 
