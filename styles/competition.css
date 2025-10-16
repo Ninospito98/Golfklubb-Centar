@@ -4,9 +4,9 @@
 
 .welcome{
     text-align: center;
-    background-color: white;
+    background-color: var(--Boxwhite);
     padding: 2rem;
-    margin: 1rem 0;
+    margin: 2rem;
 }
 
 .tournaments{
@@ -23,7 +23,7 @@
     align-items: center;
     text-align: center;
     border: 1px solid black;
-    background-color: white;
+    background-color: var(--Boxwhite);
     margin: 2rem;
     padding:2rem ;
     width: 100%;
@@ -54,7 +54,7 @@ h2{
     text-align: center;
     border: 1px solid black;
     border-radius: 1em;
-    background-color: white;
+    background-color: var(--Boxwhite);
     margin: 2rem;
     padding: 2rem ;
     width: 100%;
@@ -92,7 +92,7 @@ table{
     text-align: center;
     border: 1px solid black;
     border-radius: 1em;
-    background-color: white;
+    background-color: var(--Boxwhite);
     padding: 2rem ;
     margin: 2rem;
     width: 100%;
@@ -177,7 +177,7 @@ table{
     text-align: center;
     border: 1px solid black;
     border-radius: 1em;
-    background-color: white;
+    background-color: var(--Boxwhite);
     padding: 2rem ;
     margin: 2rem auto;
     width: 50%;

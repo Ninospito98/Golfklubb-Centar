@@ -23,6 +23,9 @@
 .banner a:hover{
     transform: scale(1.1);
 }
+main div{
+  border: 0px;
+}
 .restaurant-menu{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
