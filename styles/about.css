@@ -1,12 +1,6 @@
-.history-banner {
+.banner {
   background: url('/bilder/banners/about-banner.jpg') no-repeat center center/cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-family: 'Merriweather', serif; 
-  font-size: 40px;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+
 }
 
 .history-goal-vision-container {

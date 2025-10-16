@@ -1,14 +1,5 @@
 .banner {
-  width: 100%;
-  height: 450px; /* adjust */
   background: url('/bilder/banners/restaurant-banner.jpg') no-repeat center center/cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  justify-content: center;
-  padding-top: 2em;
 }
 .banner .button{
     display: flex;
@@ -23,7 +14,6 @@
     padding: 10px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    border: 2px solid black;
     background-color: black;
     width: 10rem;
 }
