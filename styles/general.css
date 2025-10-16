@@ -5,6 +5,7 @@
   --Boxwhite: #f1f1e7;
   --Bkggreen : #B0DB9C;
   --Detailsgreen: #79c776;
+  --Alpha: 0.6;
 }
 /* B0DB9C
 ddf6d2 */
@@ -30,7 +31,7 @@ main, main > div, main > article, main > section, main > aside {
 
 .banner{
   width: 100%;
-  height: 350px; /* adjust */
+  height: 450px; /* adjust */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,6 +43,7 @@ main, main > div, main > article, main > section, main > aside {
 }
 
 .banner-text{
+  margin-top: 100px;
   background: rgb(242, 242, 233, 0.6);
   border-radius: 8px;
 }
