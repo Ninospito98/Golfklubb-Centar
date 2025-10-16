@@ -25,6 +25,10 @@
   border: solid 1px;
 }
 
+.map{
+  width: 100%;
+}
+
 .contact-aside h2  { 
   text-align: center; 
   padding: 1rem 0 1rem 0; 
@@ -113,7 +117,7 @@
 
 .icon::after {
   transform: rotate(90deg);
-  transition: 0.5 linear;
+  transition: 0.5s linear;
 }
 
 .text{

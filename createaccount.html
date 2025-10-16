@@ -55,11 +55,8 @@
     </nav>
   </div>  
   </header>
-     <section class="banner">
-    <ul class="button">
-      <p></p>
-    </ul>
-   </section> 
+    <div class="banner">
+    </div> 
   <main class="createaccount-container">
     <aside class="createaccount-info">
       <div class="members-flex">
@@ -89,6 +86,7 @@
           <p> <a href="members.html">Klick här</a> <b>för att läsa mer om medlemskap</b></p>
 
         </div>
+        </div>
     </aside>
     <section class="createaccount-wrapper">
         <h2>Skapa Medlemskap</h2><br>
@@ -96,28 +94,28 @@
         <label for="name-surname">Namn och Efternamn</label>
         <input type="text" id="name-surname" placeholder="Charlie Chaplin" required>
         <label for="username">Anvädarnamn</label>
-        <input type="text" id="name-surname" placeholder="Charlie1889" required>
-        <label for="username">E-postadress</label>
-        <input type="email" name="email" id="username" placeholder="charlie-chaplin@gmail.com" required>
+        <input type="text" id="username" placeholder="Charlie1889" required>
+        <label for="email">E-postadress</label>
+        <input type="email" name="email" id="email" placeholder="charlie-chaplin@gmail.com" required>
         <label for="password">Lösenord</label>
         <input type="password" name="password" id="password" placeholder="**********" required>
         
         <label for="password">Repetera Lösenord</label>
-        <input type="password" name="password" id="password" placeholder="**********" required>
+        <input type="password" name="password" id="repeate-password" placeholder="**********" required>
         
         <div class="membership-container">
           <span class="bold">Välja Medlemskap: </span>
 
-          <input id="membership" type="radio" name="member" value="bas">
+          <input class="membership" id="bas" type="radio" name="member" value="bas">
           <label for="bas">Bas</label>
 
-          <input id="membership" type="radio" name="member" value="standard">
+          <input class="membership" id="standard" type="radio" name="member" value="standard">
           <label for="standard">Standard</label>
 
-          <input id="membership" type="radio" name="member" value="premium" checked>
+          <input class="membership" id="premium" type="radio" name="member" value="premium" checked>
           <label for="premium">Premium</label>
 
-          <input id="membership" type="radio" name="member" value="familje">
+          <input class="membership" id="familje" type="radio" name="member" value="familje">
           <label for="familje">Familje</label>
         </div>
         <div class="create-button">
