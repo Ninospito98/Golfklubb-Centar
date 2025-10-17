@@ -14,6 +14,10 @@
     background-color: var(--Boxwhite);
     position: relative;
 }
+.shop-intro {
+  border: 0;
+  margin-top: 25px;
+}
 .shop-content{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -39,6 +43,7 @@
 
 }
 .sorts{
+  border: 0;
     position: absolute;
     top: 7rem;
     right: 2rem;
@@ -51,7 +56,7 @@ img{
 }
 .shop-content .product{
     cursor: pointer;
-    background-color: rgb(243, 247, 243);
+    background-color: var(--Boxwhite);
 
 
 
@@ -101,7 +106,7 @@ img{
 }
 
 .shop-content-horisontell .product{
-    background-color: rgb(243, 247, 243);
+    background-color: var(--Boxwhite);
 }
 
 @media screen and (max-width: 992px) {
@@ -114,6 +119,11 @@ img{
     grid-template-rows: repeat(9, 1fr);
     gap: 1rem;
     padding: 0;
+  } 
+
+  .sorts {
+    position:static ;
+    margin-top: 2rem;
   }
 }
 
@@ -125,8 +135,5 @@ img{
     padding: 0;
   }
 
-  .sorts {
-    position:static ;
-    margin-top: 2rem;
-  }
+
 }
