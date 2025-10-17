@@ -53,6 +53,7 @@ main > div, main > article, main > section, main > aside, .welcome {
   background: rgb(242, 242, 233, 0.6);
   border-radius: 8px;
   font-family:'Poppins';
+  padding: 5px;
 }
 
 .banner-text h1 {
