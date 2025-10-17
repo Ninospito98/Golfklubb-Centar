@@ -1,14 +1,5 @@
 .banner{
-  width: 100%;
-  height: 350px; /* adjust */
   background: url('/bilder/banners/bookingbanner.png') no-repeat center 70%/cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: rgb(8, 8, 8);
-  text-align: center;
-  padding-top: 2em;
-  text-align: center;
 }
 
 .banner-text{
