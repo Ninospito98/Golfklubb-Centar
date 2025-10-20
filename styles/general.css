@@ -86,6 +86,15 @@ main > div, main > article, main > section, main > aside, .welcome {
   font-weight: bold;
 }
 
+/* Hover effect on imgs and divs */
+
+.hover-effect:hover {
+  box-shadow: 0 0 10px 5px var(--Bgreen);
+  transform: scale(1.02);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
 /* #footer */
 
 .footer-container{

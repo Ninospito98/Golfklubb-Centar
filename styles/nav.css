@@ -57,6 +57,11 @@ ul > li:last-child{
   margin-left: auto;
 }
 
+.menu > li:last-child{
+  margin-left: auto;
+  padding-right: 15px;
+}
+
 .main-nav ul li a[href="login.html"] {
   border: 1px solid black;
 }
