@@ -37,6 +37,10 @@
   width: 400px;
 }
 
+.event-img {
+  border-radius: 8px;
+}
+
 .junior-event p, .event-for-all p, .family-event p, .junior-event h2, .event-for-all h2, .family-event h2 {
   margin-top: 15px;
 }

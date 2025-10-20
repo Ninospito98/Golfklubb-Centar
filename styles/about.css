@@ -85,6 +85,12 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
+.profile img:hover {
+  box-shadow: 0 0 10px 5px var(--Bgreen);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
 .profile h3 {
   margin-top: 12px;
   font-size: 20px;
