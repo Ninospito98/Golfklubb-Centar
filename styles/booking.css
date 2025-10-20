@@ -61,12 +61,6 @@
   margin-bottom: 1em;
 }
 
-.aside-img:hover{
-  box-shadow: 0 0 10px 5px var(--Bgreen);
-  transform: scale(1.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .booking-aside h2{
   text-align: center;
   padding: 2rem 0 3rem 0;

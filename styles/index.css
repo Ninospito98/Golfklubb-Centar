@@ -66,12 +66,6 @@
   border-radius: 8px;
 }
 
-.news-grid img:hover {
-  box-shadow: 0 0 10px 5px var(--Bgreen);
-  transform: scale(1.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 /* Screensizes */
 
 /* Extra larger screens from 1500px up */
