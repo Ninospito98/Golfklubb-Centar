@@ -4,9 +4,9 @@
 
 .welcome{
     text-align: center;
-    background-color: white;
+    background-color: var(--Boxwhite);
     padding: 2rem;
-    margin: 1rem 0;
+    margin: 2rem;
 }
 
 .tournaments{
@@ -23,7 +23,7 @@
     align-items: center;
     text-align: center;
     border: 1px solid black;
-    background-color: white;
+    background-color: var(--Boxwhite);
     margin: 2rem;
     padding:2rem ;
     width: 100%;
@@ -32,6 +32,13 @@
 .tournaments img{
     max-width: 100%;
     width: 400px;
+    border-radius: 8px;
+}
+
+.comp-img:hover {
+  box-shadow: 0 0 10px 5px var(--Bgreen);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .result{
@@ -54,7 +61,7 @@ h2{
     text-align: center;
     border: 1px solid black;
     border-radius: 1em;
-    background-color: white;
+    background-color: var(--Boxwhite);
     margin: 2rem;
     padding: 2rem ;
     width: 100%;
@@ -92,7 +99,7 @@ table{
     text-align: center;
     border: 1px solid black;
     border-radius: 1em;
-    background-color: white;
+    background-color: var(--Boxwhite);
     padding: 2rem ;
     margin: 2rem;
     width: 100%;
@@ -177,7 +184,7 @@ table{
     text-align: center;
     border: 1px solid black;
     border-radius: 1em;
-    background-color: white;
+    background-color: var(--Boxwhite);
     padding: 2rem ;
     margin: 2rem auto;
     width: 50%;

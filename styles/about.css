@@ -52,7 +52,7 @@
   padding-left: 19px;
 }
 
-.about-us-box {
+.welcome {
   background: var(--Boxwhite);
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
@@ -83,6 +83,12 @@
   object-fit:cover;
   border-radius: 5%;
   box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.profile img:hover {
+  box-shadow: 0 0 10px 5px var(--Bgreen);
+  transform: scale(1.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .profile h3 {
@@ -116,7 +122,7 @@
 }
 
 @media (max-width: 768px) {
-  .about-us-box {
+  .welcome {
     width: 100%;
     margin: 0;
     border-radius: 0;
