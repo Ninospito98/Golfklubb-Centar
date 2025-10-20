@@ -44,7 +44,6 @@
 
 .main-nav a:hover {
   background: #79c776;
-  /* background: var(--Bgreen); */
   transform: scale(1.05);
   border-radius: 5px;
 }
@@ -56,7 +55,6 @@ ul > li:first-child{
 
 ul > li:last-child{
   margin-left: auto;
-  padding-right: 15px;
 }
 
 .main-nav ul li a[href="login.html"] {
