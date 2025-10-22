@@ -1,3 +1,5 @@
+
+/* Baserules */
 .banner {
   background: url('/bilder/banners/banner-member.png') no-repeat  center 20%/cover;
 }
@@ -27,6 +29,7 @@
   flex: 75%;
 }
 
+/* Grid */
 .members-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -66,6 +69,7 @@
   display: inline-block;
 }
 
+/* FAQ */
 .list{
   width: 80%;
   display: flex;

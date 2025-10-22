@@ -54,6 +54,10 @@ main div{
     background: url('/bilder/restaurant/menu-drinks.jpeg') no-repeat center center/cover;
 }
 
+/* Screensizes */
+
+/* Large screens 992px and below */
+
 @media screen and (max-width: 992px) {
   .restaurant-menu, .drinks-menu {
     grid-template-columns: 1fr 1fr;
@@ -62,6 +66,8 @@ main div{
     gap: 2rem;
   }
 }
+
+/* Small screens 600px and below */
 
 @media screen and (max-width: 600px){
   .restaurant-menu, .drinks-menu {
