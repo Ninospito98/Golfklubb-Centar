@@ -295,6 +295,8 @@ table{
   }
   .welcome, .junior, .senior, .veteran {
     padding: 2rem 0.5rem;
+    margin: 0;
+    border-radius: 0;
   }
 }
 
@@ -312,11 +314,14 @@ table{
   input[name='score-toggle1']:checked ~ .drop-result, input[name='score-toggle2']:checked ~ .drop-result, input[name='score-toggle3']:checked ~ .drop-result {
     height: 50em;
     overflow: hidden;
+  } 
+  .form{
+    padding: 5px;
   }
-  
+}
 @media only screen and (max-width: 320px){
   .form, .form-container, .tournaments, .result, .small-calendar{
   padding: 0;
-  margin: 0;}
-}  
+  margin: 0;
 }
+}  
