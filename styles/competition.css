@@ -168,7 +168,7 @@ table{
   padding: 2rem 0 3rem 0;
 }
 
-.list a{
+.item > a{
   color: var(--Boxwhite);
   font-weight: bold;
   background-color: var(--Bgreen);
