@@ -1,10 +1,9 @@
-/* Banner */
+
+/* Baserules */
 .banner{
   background: url('/bilder/banners/bookingbanner.png') no-repeat center 70%/cover;
 }
-
-/* Content */
-
+/* Grid */
 .booking-wrapper{
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
@@ -61,12 +60,6 @@
   margin-bottom: 1em;
 }
 
-.aside-img:hover{
-  box-shadow: 0 0 10px 5px var(--Bgreen);
-  transform: scale(1.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .booking-aside h2{
   text-align: center;
   padding: 2rem 0 3rem 0;
@@ -83,15 +76,7 @@
   grid-row: span 1;
 }
 
-.login {
-  display: inline-block;
-  padding: 11px 24px;
-  background: #7da64a;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px;
-}
+/* FAQ */
 
 .list{
   width: 80%;
@@ -112,7 +97,6 @@
 .icon{
   width: 20px;
   position: relative;
-
 }
 
 .icon::before, .icon::after {
@@ -143,6 +127,8 @@
 .item:target .icon::after {
   transform: rotateY(90deg);
 }
+
+/* Booking Form */
 
 .booking-fieldset{
   display: flex;

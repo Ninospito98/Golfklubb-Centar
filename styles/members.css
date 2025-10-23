@@ -1,3 +1,5 @@
+
+/* Baserules */
 .banner {
   background: url('/bilder/banners/banner-member.png') no-repeat  center 20%/cover;
 }
@@ -27,6 +29,7 @@
   flex: 75%;
 }
 
+/* Grid */
 .members-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -45,12 +48,7 @@
   padding: 1em;
   text-align: center;
 }
-.member-type:hover, .sponsorship:hover{
-  box-shadow: 0 0 10px 5px var(--Bgreen);
-  transform: scale(1.02);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: none;
-}
+
 .sponsorship{
   grid-column: span 2;
 }
@@ -71,6 +69,7 @@
   display: inline-block;
 }
 
+/* FAQ */
 .list{
   width: 80%;
   display: flex;

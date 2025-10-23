@@ -45,12 +45,6 @@
   margin-top: 15px;
 }
 
-.event-box img:hover {
-  box-shadow: 0 0 10px 5px var(--Bgreen);
-  transform: scale(1.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 .event-calendar td, .event-calendar th {
   border: 1px solid #dddddd;
   text-align: center;
