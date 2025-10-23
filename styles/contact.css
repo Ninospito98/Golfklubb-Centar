@@ -134,7 +134,40 @@
 .item:target .icon::after {
   transform: rotateY(90deg);
 }
+.feedback-container{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 3rem;
+  background-color: var(--Boxwhite);
+}
+.feedback-container h2{
+  text-align: center;
+}
 
+.feedback{
+  display: flex;
+  padding: 1rem;
+}
+.feedback > div {
+  display: flex;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  padding: 1rem;
+  margin: 1rem;
+  gap: 1rem;
+  background-color: rgb(236, 233, 233);
+}
+.feedback img{
+  width: 50px;
+  border-radius: 50%;
+  border: 3px solid green;
+}
+.quote p{
+  font-size: large;
+  padding-bottom: 1rem;
+}
 @media only screen and (max-width: 1200px) {
   .contact-wrapper {
   gap: 1em;
