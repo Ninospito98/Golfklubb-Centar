@@ -58,7 +58,10 @@ main > div, main > article, main > section, main > aside, .welcome {
 
 .banner-text h1 {
   font-size: 3rem;
-  
+}
+
+.banner-text h2 {
+  font-size: 2rem;
 }
 
 
