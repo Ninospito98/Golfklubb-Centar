@@ -27,6 +27,12 @@
   text-align: center;
 }
 
+.link-courses {
+  grid-column: span 3;
+  text-align: center;
+  width: 100%;
+}
+
 .calendar-section{
   display: flex;
   flex-direction: column;
