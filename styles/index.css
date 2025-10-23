@@ -20,6 +20,13 @@
   padding-top: 20px;
 }
 
+.main-article h2 {
+  margin-bottom: 10px;
+}
+.main-article p {
+  margin-bottom: 10px;
+}
+
 .welcome-img {
   max-width: 100%;
   height: auto;

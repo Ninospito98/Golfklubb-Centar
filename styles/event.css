@@ -2,6 +2,10 @@
   background: url('/bilder/banners/flygbild.png') no-repeat center 80%/cover;
 }
 
+h3 {
+  margin: 15px 0 10px 0;
+}
+
 .event-wrapper{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -18,7 +22,10 @@
   background: var(--Boxwhite);
   grid-column: span 3;
   text-align: center;
-  
+}
+
+.welcome h2{
+  margin-bottom: 10px;
 }
 
 .event-box {
@@ -41,9 +48,9 @@
   border-radius: 8px;
 }
 
-.junior-event p, .event-for-all p, .family-event p, .junior-event h2, .event-for-all h2, .family-event h2 {
+/* .junior-event p, .event-for-all p, .family-event p, .junior-event h3, .event-for-all h3, .family-event h3 {
   margin-top: 15px;
-}
+} */
 
 .event-calendar td, .event-calendar th {
   border: 1px solid #dddddd;
