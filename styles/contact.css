@@ -142,7 +142,7 @@
   margin: 3rem;
   background-color: var(--Boxwhite);
 }
-.feedback-container h2{
+.feedback-container h3{
   text-align: center;
 }
 
@@ -158,16 +158,19 @@
   margin: 1rem;
   gap: 1rem;
   background-color: rgb(236, 233, 233);
+  flex: 25%;
+
 }
 .feedback img{
   width: 50px;
   border-radius: 50%;
   border: 3px solid green;
 }
-.quote p{
+.feedback p{
   font-size: large;
-  padding-bottom: 1rem;
+  padding: 10px;
 }
+
 @media only screen and (max-width: 1200px) {
   .contact-wrapper {
   gap: 1em;
@@ -177,14 +180,19 @@
     width: 150px;
     float: none;
   }
+  .feedback > div{
+    flex-wrap: wrap;
+    display: block;
+  }
+  
 }
 
 @media only screen and (max-width: 992px) {
   .contact-wrapper {
     flex-direction: column;
-    margin: 0;
+    margin: 0.5rem;
     padding: 0;
-    gap: 0 ;
+    gap: 0.5rem;
   }
 
   .contact-aside, .contact-container {
@@ -197,11 +205,30 @@
     float: none;
   }
 
+  .feedback-container{
+    margin: 0.5rem;
+    padding: 10px;
+    gap: 0.5rem;
+  }
+  .feedback{
+    display: block;
+  }
+  .feedback > div{
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
   .contact-grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+  .feedback > div{
+    margin: 5px;
+    padding: 10px;
   }
 }
