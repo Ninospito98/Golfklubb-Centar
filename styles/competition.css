@@ -90,11 +90,10 @@ table{
 
 /* Calendar and table rulse */
 
-.calendar, .list{
+.calendar{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     text-align: center;
     border: 1px solid black;
     border-radius: 1em;
@@ -103,6 +102,16 @@ table{
     margin: 2rem;
     width: 100%;
 }
+.list{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 1em;
+    background-color: var(--Boxwhite);
+    padding: 2rem ;
+    margin: 2rem;
+    width: 100%;
+ }
+ 
 
 .calendar td, .calendar th {
   border: 1px solid #000000;
