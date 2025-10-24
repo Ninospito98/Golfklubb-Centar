@@ -8,8 +8,6 @@
   --Boxwhite: #f1f1e7;
   --Bkggreen : #B0DB9C;
 }
-/* B0DB9C
-ddf6d2 */
 * {
   margin: 0;
   padding: 0;
@@ -183,6 +181,9 @@ main > div, main > article, main > section, main > aside, .welcome {
 @media only screen and (max-width: 600px) {
   .banner-text h1 {
     font-size: 2.5rem;
+  }
+  .banner-text h2 {
+    font-size: 1.5rem;
   }
   .footer-container{
     grid-template-columns: 1fr 1fr;
