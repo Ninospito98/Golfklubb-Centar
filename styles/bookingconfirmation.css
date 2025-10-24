@@ -9,12 +9,14 @@
 
 .bookingconfirm-wrapper{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 2rem;
 }
 
 .bookingconfirm-box{
+  
   background: var(--Boxwhite);
   padding: 2rem;
   text-align: center;
@@ -24,18 +26,17 @@
   margin-bottom: 10px;
 }
 
+@media screen and (max-width:992px) {
 
-.btn {
-  background-color: var(--Bgreen);
-  color: white;
-  text-align: center;
-  font-size: 18px;
-  padding: 0.5em 1em;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 2em;
-  height: 45px;
-  grid-column: span 2;
-  text-decoration: none;
+  .bookingconfirm-wrapper{
+    margin: 0;
+  }
+  
+}
+
+@media screen and (max-width:400px) {
+  .bookingconfirm-box{
+    display: flex;
+  flex-direction: column;
+  }
 }

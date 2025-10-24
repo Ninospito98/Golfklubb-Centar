@@ -243,6 +243,9 @@ table{
     margin: 0;
     width: 100%;
   }
+  .welcome {
+    margin: 0;
+  }
 }
 
 /* Medium screens 992px and below */

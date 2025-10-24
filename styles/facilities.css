@@ -73,10 +73,13 @@
 
 @media (max-width: 1200px) {
   .facility-grid {
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
-    gap: 2.5rem;
-    padding: 3rem 4rem;
-  }
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    margin: 0;
+    gap: 0;
+    
+  
+  } 
 
   .facilities-banner {
     font-size: 40px;
@@ -86,19 +89,15 @@
   .facility-box .main-img {
     height: 200px;
   }
+  .facility-box{
+    padding: 10px;
+  }
 }
 
 @media (max-width: 992px) {
+ 
   .facility-grid {
-    grid-template-columns: repeat(2, 1fr);
-    /* gap: 2rem; */
-    /* padding: 2.5rem; */
-    padding: 0;
-    margin: 0;
-    margin-top: 20px;
-    gap: 0;
-    
-  
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
   .facility-box {
     border-radius: 0;

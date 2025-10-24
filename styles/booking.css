@@ -206,28 +206,10 @@ select option:checked{
 /* larger screens from 1200px down */
 @media only screen and (max-width: 1200px) {
   .booking-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-    gap: 1em;
-  }
-
-  .calendar-section, .booking-aside{
-    margin: 1em;
-    padding: 1em;
-    width: 90%;
-  }
-  
-}
-
-/* Medium and small screens 992px and down */
-@media only screen and (max-width: 992px) {
-  .booking-wrapper{
     margin: 0;
     padding: 0;
     gap: 0;
+
   }
   .calendar-section, .booking-aside{
     margin: 0;
@@ -237,6 +219,19 @@ select option:checked{
     text-align: center;
     border-bottom: 1px solid black;
   }
+
+  
+}
+
+/* Medium and small screens 992px and down */
+@media only screen and (max-width: 992px) {
+  .booking-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 /* Small screens 600px and down */
