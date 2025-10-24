@@ -8,8 +8,6 @@
   --Boxwhite: #f1f1e7;
   --Bkggreen : #B0DB9C;
 }
-/* B0DB9C
-ddf6d2 */
 * {
   margin: 0;
   padding: 0;
@@ -30,6 +28,11 @@ main, main > div, main > article, main > section, main > aside, .welcome {
 
 main > div, main > article, main > section, main > aside, .welcome {
   border: 1px solid black;
+}
+
+p{
+  letter-spacing: 0.5px;
+  line-height: 22px;
 }
 
 
@@ -68,9 +71,10 @@ main > div, main > article, main > section, main > aside, .welcome {
 /* Button */
 .btn {
   background-color: var(--Bgreen);
-  color: white;
+  color: black;
   text-align: center;
   font-size: 18px;
+  font-weight: 600;
   padding: 0.5em 1em;
   border: none;
   border-radius: 8px;
@@ -89,15 +93,16 @@ main > div, main > article, main > section, main > aside, .welcome {
   font-weight: bold;
 }
 
+
 /* Hover effect on imgs and divs */
 
-.hover-effect:hover {
+/* .hover-effect:hover {
   border-radius: 8px;
   box-shadow: 0 0 10px 5px var(--Bgreen);
   transform: scale(1.02);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: none;
-}
+} */
 
 /* #footer */
 
@@ -162,7 +167,7 @@ main > div, main > article, main > section, main > aside, .welcome {
 @media only screen and (max-width: 1200px) {
   .footer-container{
     background-color: var(--Bkggreen);
-  }    
+  }   
 }
 
 @media only screen and (max-width: 992px) {
@@ -181,13 +186,19 @@ main > div, main > article, main > section, main > aside, .welcome {
 }
 
 @media only screen and (max-width: 600px) {
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
+  .banner-text h2 {
+    font-size: 1.5rem;
+  }
   .footer-container{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 50px;
     text-align: center;
     justify-items: center;
     row-gap: 2em;
-  }
+  } 
 
   .kontakta-oss{
     grid-column: span 2;

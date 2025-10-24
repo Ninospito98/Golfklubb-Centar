@@ -59,14 +59,14 @@
 }
 
 .members-aside a{
-  color: var(--Boxwhite);
+  color: black;
   font-weight: bold;
   background-color: var(--Bgreen);
   text-decoration: none;
 }
 
 .btn {
-  display: inline-block;
+  display: none;
 }
 
 /* FAQ */
@@ -107,15 +107,22 @@
 }
 
 .text{
-  opacity: 0;
+  display: none;
   height: 0;
+}
+.item {
+  margin-top: 5px;
 }
 
 .item:target .text {
-  opacity: 1;
+  display: block;
   height: auto;
   padding: 10px 10px;
 }
+
+ .item:target .btn{
+  display: inline-block;
+ }
 
 .item:target .icon::after {
   transform: rotateY(90deg);
@@ -124,7 +131,10 @@
 /* larger screens from 1200px down */
 @media only screen and (max-width: 1200px) {
   .members-wrapper {
-  gap: 1em;
+    gap: 0;    
+    margin: 0;
+    padding: 0;
+
   }
 
   .member-icon{
@@ -138,9 +148,6 @@
 @media only screen and (max-width: 992px) {
   .members-wrapper {
     flex-direction: column;
-    margin: 0;
-    padding: 0;
-    gap: 0 ;
   }
   .members-aside, .members-container {
     flex: 100%;

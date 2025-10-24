@@ -4,9 +4,9 @@
 
 .contact-wrapper {
   display: flex;
-  gap: 3rem;
-  padding: 2em;
-  margin: 1.5em;
+  gap: 1.5rem;
+  padding: 1em;
+  margin: 1em;
 }
 
 .contact-aside, .contact-aside ul{
@@ -35,7 +35,7 @@
 }
 
 .contact-aside a{
-  color: var(--Boxwhite);
+  color: black;
   font-weight: bold;
   background-color: var(--Bgreen);
   text-decoration: none;
@@ -173,7 +173,9 @@
 
 @media only screen and (max-width: 1200px) {
   .contact-wrapper {
-  gap: 1em;
+  gap: 0;
+  margin: 0;
+  padding: 0;
   }
 
   .member-icon{
@@ -184,15 +186,16 @@
     flex-wrap: wrap;
     display: block;
   }
-  
+    .feedback-container{
+    margin: 0;
+    padding: 0;
+    gap: 0;
+  }
 }
 
 @media only screen and (max-width: 992px) {
   .contact-wrapper {
     flex-direction: column;
-    margin: 0.5rem;
-    padding: 0;
-    gap: 0.5rem;
   }
 
   .contact-aside, .contact-container {
@@ -205,11 +208,6 @@
     float: none;
   }
 
-  .feedback-container{
-    margin: 0.5rem;
-    padding: 10px;
-    gap: 0.5rem;
-  }
   .feedback{
     display: block;
   }

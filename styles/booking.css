@@ -28,9 +28,10 @@
 }
 
 .link-courses {
-  grid-column: span 3;
+  grid-column: 2/3;
+  justify-self: center;
   text-align: center;
-  width: 100%;
+  width: 250px;
 }
 
 .calendar-section{
@@ -72,7 +73,7 @@
 }
 
 .booking-aside a{
-  color: var(--Boxwhite);
+  color: black;
   font-weight: bold;
   background-color: var(--Bgreen);
   text-decoration: none;
@@ -120,12 +121,15 @@
 }
 
 .text{
-  opacity: 0;
+  display: none;
   height: 0;
+}
+.item {
+  margin-top: 5px;
 }
 
 .item:target .text {
-  opacity: 1;
+  display: block;
   height: auto;
   padding: 10px 10px;
 }
@@ -206,28 +210,10 @@ select option:checked{
 /* larger screens from 1200px down */
 @media only screen and (max-width: 1200px) {
   .booking-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 1em;
-    gap: 1em;
-  }
-
-  .calendar-section, .booking-aside{
-    margin: 1em;
-    padding: 1em;
-    width: 90%;
-  }
-  
-}
-
-/* Medium and small screens 992px and down */
-@media only screen and (max-width: 992px) {
-  .booking-wrapper{
     margin: 0;
     padding: 0;
     gap: 0;
+
   }
   .calendar-section, .booking-aside{
     margin: 0;
@@ -237,6 +223,19 @@ select option:checked{
     text-align: center;
     border-bottom: 1px solid black;
   }
+
+  
+}
+
+/* Medium and small screens 992px and down */
+@media only screen and (max-width: 992px) {
+  .booking-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 /* Small screens 600px and down */
