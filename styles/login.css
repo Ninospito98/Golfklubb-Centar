@@ -63,6 +63,10 @@ input:focus::placeholder{
     text-decoration: underline;
     padding-top: 1rem;
 }
+#remember{
+  margin: 5px;
+  padding: 5px;
+}
 .skapa-konto{
   display: flex;
   flex-direction: column;

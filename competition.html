@@ -24,10 +24,10 @@
         <!-- <li><a href="index.html">Startsida</a></li> -->
         <li><a href="booking.html">Boka Starttid</a></li>
         <!-- Dropdown -->
-        <li class="has-subnav">
+        <li class="has-subnav current">
           <a href="#">Event▾</a>
           <ul class="sub-nav">
-            <li><a href="competition.html">Tävlingar</a></li>
+            <li class="current"><a href="competition.html">Tävlingar</a></li>
             <li><a href="event.html">Evenemang</a></li>
           </ul>
         </li>    
@@ -709,8 +709,8 @@
           <option value="Höstavslutning" class="time">Höstavslutning</option>
         </select>
 
-        <p>Övriga Information:</p>
-        <textarea name="comments" cols="30" rows="4"></textarea>
+        <label for="comments">Övriga Information:</label>
+        <textarea name="comments" id="comments" cols="30" rows="4"></textarea>
 
         <button type="submit" class="btn">Skicka Ansökan</button>
         </form>
