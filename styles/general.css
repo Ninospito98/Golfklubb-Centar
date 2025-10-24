@@ -162,7 +162,7 @@ main > div, main > article, main > section, main > aside, .welcome {
 @media only screen and (max-width: 1200px) {
   .footer-container{
     background-color: var(--Bkggreen);
-  }    
+  }   
 }
 
 @media only screen and (max-width: 992px) {
@@ -181,13 +181,16 @@ main > div, main > article, main > section, main > aside, .welcome {
 }
 
 @media only screen and (max-width: 600px) {
+  .banner-text h1 {
+    font-size: 2.5rem;
+  }
   .footer-container{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 50px;
     text-align: center;
     justify-items: center;
     row-gap: 2em;
-  }
+  } 
 
   .kontakta-oss{
     grid-column: span 2;

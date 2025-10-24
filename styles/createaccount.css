@@ -48,17 +48,6 @@ input[type="radio"] {
     margin: auto;
 }
 
-/* .create-button input{
-    width: 8rem;
-    height: 3rem;
-    font-size: large;
-    font-weight: bold;
-    background-color: green;
-    box-shadow: inset 10px 15px 10px rgba(0, 0, 0, 0.2);    
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-} */
 .members-flex {
     display: flex;
     flex-direction: column;
@@ -81,14 +70,7 @@ input[type="radio"] {
     border-radius: 8px;
     padding: 1em;
 }
-
-@media screen and (max-width: 992px) {
-  .createaccount-container{
-    flex-direction: column-reverse;
-  }
-}
-
-@media screen and (max-width: 756px) {
+@media screen and (max-width: 1200px) {
   .createaccount-container {
     margin: 0;
     gap: 0;
@@ -97,6 +79,14 @@ input[type="radio"] {
     border-radius: 0;
   }
 }
+
+@media screen and (max-width: 992px) {
+  .createaccount-container{
+    flex-direction: column-reverse;
+  }
+}
+
+
 
 
   

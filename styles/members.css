@@ -124,7 +124,10 @@
 /* larger screens from 1200px down */
 @media only screen and (max-width: 1200px) {
   .members-wrapper {
-  gap: 1em;
+    gap: 0;    
+    margin: 0;
+    padding: 0;
+
   }
 
   .member-icon{
@@ -138,9 +141,6 @@
 @media only screen and (max-width: 992px) {
   .members-wrapper {
     flex-direction: column;
-    margin: 0;
-    padding: 0;
-    gap: 0 ;
   }
   .members-aside, .members-container {
     flex: 100%;

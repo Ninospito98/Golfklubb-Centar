@@ -99,11 +99,14 @@ img{
 .shop-content-horisontell .product{
     background-color: var(--Boxwhite);
 }
-
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px){
   .shop-container, .content-horisontell {
     margin: 0;
-  }
+  }  
+}
+
+@media screen and (max-width: 992px) {
+
 
   .shop-content {
     grid-template-columns: 1fr 1fr;
