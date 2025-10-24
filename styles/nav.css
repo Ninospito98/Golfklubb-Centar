@@ -38,6 +38,10 @@
   transform: scale(1.05);
   border-radius: 5px;
 }
+.current {
+  background: rgba(136, 243, 136, 0.5);
+  border-radius: 5px;
+}
 
 ul > li:first-child{
   color: rgb(0, 0, 0);
