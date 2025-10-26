@@ -27,6 +27,14 @@
     justify-content: start;
     background: url('/bilder/restaurant/tablebooking-bkg1.jpg') no-repeat center center/cover;
 }
+.table-information{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10rem 0 10rem 0.5rem;
+}
 .booking-fieldset h2{
     display: flex;
     flex-direction: column;
@@ -36,8 +44,7 @@
     margin-top: 3rem;
 }
 .booking-fieldset{
-    margin: 4rem;
-
+    margin: 4rem 2rem;
 }
 .booking-form{
     display: flex;
@@ -74,6 +81,14 @@
 
 @media only screen and (max-width: 660px){
 
+    .table-wrapper{
+        flex-direction: column;
+    }
+    .table-information{
+        width: auto;
+        margin: 0;
+    }
+
     .booking-form{
         padding: 0;
         margin: 0;
@@ -93,10 +108,8 @@
         padding: 0;
         margin: 0;
     }
-   .banner{
-    margin-bottom: 1rem;
-   } 
+   
    .banner a{
-    width: auto;
+    width: 7.5rem;
    }
 }

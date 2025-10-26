@@ -162,6 +162,10 @@ p{
   width: 25px;
 }
 
+input:focus::placeholder{
+    color: transparent;         /* when u click on the text-box the text/placeholder disappear*/
+}
+
 /* screensizes */
 
 @media only screen and (max-width: 1200px) {
