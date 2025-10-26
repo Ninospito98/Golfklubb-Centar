@@ -54,10 +54,7 @@
     cursor: pointer;
     font-size: large;
 } */
- 
-input:focus::placeholder{
-    color: transparent;         /* when u click on the text-box the text/placeholder disappear*/
-}
+
 .login > p{
     cursor: pointer;
     text-decoration: underline;

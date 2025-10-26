@@ -37,7 +37,7 @@
     padding: 2rem;
 
 }
-.grid-container div{
+.grid-container section{
     border: 1px solid black;
     border-radius: 5px;
     padding: 1rem;
@@ -64,18 +64,25 @@
     margin-top: 3rem;
     font-style: italic;
 }
-.bottom{
-    grid-area: bottom;
-    background-color: var(--Boxwhite);
-    text-align: center;
-}
-
 
 .middle-left ul > li,
 .middle-right ul > li{
     list-style-type: none;
     padding: 5px;
 }
+
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: bottom;
+    background-color: var(--Boxwhite);
+    text-align: center;
+}
+.bottom h2{
+  margin-bottom: 0.5rem;
+}
+
 
 @media screen and (max-width: 1200px){
   .grid-container{
