@@ -1,6 +1,5 @@
 .banner {
   background: url('/bilder/banners/menu-banner.jpg') no-repeat center center/cover;
-  justify-content: center;
 
 }
 .banner .button{
@@ -9,6 +8,7 @@
     gap: 10px;
     justify-content: space-between;
     list-style-type: none;    
+    z-index: 2;
 }
 
 .banner a{
