@@ -19,6 +19,7 @@ body{
 }
 .conformation-wrapper p{
     font-size: large;    
+    margin-bottom: 10px;
 }
 .conformation-wrapper a{
     color: rgb(0, 0, 0);
