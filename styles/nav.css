@@ -43,12 +43,12 @@
   border-radius: 5px;
 }
 
-ul > li:first-child{
+.menu > li:first-child{
   color: rgb(0, 0, 0);
   margin-right: auto;
 }
 
-ul > li:last-child{
+.menu > li:last-child{
   margin-left: auto;
 }
 
@@ -148,7 +148,7 @@ input[name='menu-toggle']:checked ~ label .bottom {
     display: flex;
     flex-direction: column;
     right: 0;
-    top: 10px;
+    top: 35px;
     left: 0;
     gap: 0.5rem;
     width: 100%;
@@ -189,6 +189,7 @@ input[name='menu-toggle']:checked ~ label .bottom {
     width: 2.5rem;
     height: 2.5rem;
     cursor: pointer;
+    margin-right: 15px;
   }
 
   .hamburger-menu .bar {
