@@ -1,12 +1,15 @@
 .banner {
   background: url('/bilder/restaurant/salmon-with-ingredients-table.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction:column;  
 }
 
 .banner .button{
     display: flex;
     padding: 10px;
     gap: 10px;
-    list-style-type: none;    
+    list-style-type: none;   
+    z-index: 2;
 }
 
 .banner a{
