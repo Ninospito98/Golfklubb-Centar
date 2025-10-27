@@ -40,17 +40,18 @@
     padding: 2rem;
 
 }
-.grid-container section{
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 1rem;
-}
 .up{
     grid-area: up;
     text-align: center;
     background-color: var(--Boxwhite);
-    
+    padding: 3rem ; 
 }
+.selections, .bottom-content{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
 .middle-left{
     grid-area: middle-left;
     background: url('/bilder/restaurant/restaurant-breakfast.jpg') no-repeat center center/cover;
@@ -74,7 +75,7 @@
     padding: 5px;
 }
 
-.bottom{
+.bottom-content{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -82,7 +83,7 @@
     background-color: var(--Boxwhite);
     text-align: center;
 }
-.bottom h2{
+.bottom-content h2{
   margin-bottom: 0.5rem;
 }
 .breakfast-price , .open-times, .lunch-price{
@@ -117,7 +118,7 @@
   .grid-container section{
     border-radius: 0;
   }
-  .bottom{
+  .bottom-content{
     flex-direction: column;
     justify-content: center;
   }
