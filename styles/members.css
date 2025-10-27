@@ -65,7 +65,11 @@
   text-decoration: none;
 }
 
-.btn {
+.createaccount-box p {
+  margin-bottom: 10px;
+}
+
+.hidden-btn {
   display: none;
 }
 
