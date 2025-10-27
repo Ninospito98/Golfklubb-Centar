@@ -181,6 +181,7 @@ input:focus::placeholder{
   main, main > div, main > article, main > section, main > aside {
   border-radius: 0;
   }
+
 }
 
 @media only screen and (min-width: 600px) {
