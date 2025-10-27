@@ -36,10 +36,15 @@
   grid-template-rows: 1fr 1fr 1fr;
   gap: 1em;
 }
+.member-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .member-icon{
   width: 150px;
-  float: left;
+  /* float: left; */
 }
 
 .member-type, .sponsorship{
@@ -47,6 +52,10 @@
   border-radius: 8px;
   padding: 1em;
   text-align: center;
+}
+
+.member-price {
+  margin-top: auto;
 }
 
 .sponsorship{
@@ -63,6 +72,11 @@
   font-weight: bold;
   background-color: var(--Bgreen);
   text-decoration: none;
+  margin: 10px;
+}
+
+.createaccount-box{
+  padding-bottom: 10px;
 }
 
 .createaccount-box p {
