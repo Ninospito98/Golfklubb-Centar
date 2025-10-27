@@ -37,10 +37,10 @@ main div{
     background: url('/bilder/restaurant/menu-lunch.jpg') no-repeat center center/cover;
 
 }
-.restaurant-menu >h2 ,p,
-.drinks-menu > h2, p{
+.restaurant-menu >h2 ,.restaurant-menu > p,
+.drinks-menu > h2, .drinks-menu > p{
     padding: 5px;
-    
+    text-align: start;
 }
 .drinks-menu{
     display: grid;
