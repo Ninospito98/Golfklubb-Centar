@@ -14,7 +14,6 @@
 .tournaments{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .junior, .senior, .veteran{
@@ -39,7 +38,6 @@
 .result{
     display: flex;
     justify-content: center;
-    align-items: center;
     border-bottom: 1px solid black;
 }
 
