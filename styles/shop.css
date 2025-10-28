@@ -23,7 +23,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr);
     width: 100%;
-    gap: 2rem;
+    gap: 1rem;
     margin-top: 3rem;
     text-align: center;
     /* Här skapar jag en scroll så vi kan lägga mer produkter utan att den ta så mycket plats i skärmen*/
@@ -39,21 +39,27 @@
     top: 7rem;
     right: 2rem;
 }
+
 img{
     width: 300px;
+    /* background-color: white; */
 }
-.shop-content img:hover{
+.product-holder{
+  width: 400px;
+  background-color: white;
+  justify-self: center;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.product-holder:hover{
     transform: scale(1.15);
 }
-.shop-content .product{
-    cursor: pointer;
-    background-color: var(--Boxwhite);
 
-
-
-}
 .product{
     padding-bottom:1rem;
+    align-items: center;
+    justify-content: center;
     
 }
 .product-descreption{
@@ -62,6 +68,7 @@ img{
     justify-content: center;
     align-items: center;
     text-align: center;
+    /* width: 300px; */
 }
 .product-descreption h2{
     display: flex;
