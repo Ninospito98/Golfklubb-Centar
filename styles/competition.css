@@ -15,7 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: 1px solid black;
 }
 
 .junior, .senior, .veteran{
@@ -224,6 +223,14 @@ table{
     border-radius: 4px;
     text-align: center;
     font-size: 18px;
+  }
+
+select option:hover {
+  box-shadow: 0 0 10px 100px var(--Bgreen) inset !important;
+  color:white;
+}
+select option:checked{
+  box-shadow: 0 0 10px 100px var(--Bgreen) inset !important;
   }
 
 /* Hidden score */

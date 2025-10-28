@@ -694,14 +694,16 @@
         <input type="email" name="email" id="email" placeholder="ex: Jonsnow1@gmail.com" required>
 
         <label for="tournaments">Välj Tävlingsnivå:</label>
-        <select name="tournaments" id="tournaments"  >
+        <select name="tournaments" id="tournaments" required onfocus='this.size=4;' onblur='this.size=0;' onchange='this.size=1; this.blur();'>>
+          <option value="">Välj tävlingnivå</option>
           <option value="Junior Cup" class="tournaments">Junior Cup</option>
           <option value="Senior Open" class="tournaments">Senior Open</option>
           <option value="Veteran Challenge" class="tournaments">Veteran Challenge</option>
         </select>
 
         <label for="time">Välj Starttid:</label>
-        <select name="time" id="time">
+        <select name="time" id="time" required onfocus='this.size=4;' onblur='this.size=0;' onchange='this.size=1; this.blur();'>>
+          <option value="">Välj Start</option>
           <option value="Vårstart" class="time">Vårstart</option>
           <option value="Sommarslag" class="time">Sommarslag</option>
           <option value="Höstavslutning" class="time">Höstavslutning</option>

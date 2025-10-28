@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .banner .button{
     display: flex;
     padding: 10px;
@@ -20,37 +21,50 @@
     background-color: black;
     width: 10rem;
 }
+
 .banner a:hover{
     transform: scale(1.1);
 }
+
+.grid-container{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+  "up up"
+  "middle-left middle-right"
+  "bottom bottom";
+  gap: 2rem;
+  padding: 2rem;
+
+}
+.up{
+  grid-area: up;
+  text-align: center;
+  background-color: var(--Boxwhite);
+  padding: 3rem ; 
+}
+
+.up h2 {
+  margin-bottom: 10px;
+}
+
+.up p {
+  padding: 0 20%;
+  margin-bottom: 10px;
+}
+
 .welcome-img {
   max-width: 100%;
   height: auto;
   margin-top: 2em;
 }
-.grid-container{
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:
-    "up up"
-    "middle-left middle-right"
-    "bottom bottom";
-    gap: 2rem;
-    padding: 2rem;
-
-}
-.grid-container section{
+.selections, .bottom-content{
     border: 1px solid black;
     border-radius: 5px;
     padding: 1rem;
 }
-.up{
-    grid-area: up;
-    text-align: center;
-    background-color: var(--Boxwhite);
-    
-}
+
 .middle-left{
     grid-area: middle-left;
     background: url('/bilder/restaurant/restaurant-breakfast.jpg') no-repeat center center/cover;
@@ -62,6 +76,7 @@
 
 
 }
+
 .middle-right p{
     text-align: center;
     margin-top: 3rem;
@@ -74,7 +89,7 @@
     padding: 5px;
 }
 
-.bottom{
+.bottom-content{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -82,13 +97,30 @@
     background-color: var(--Boxwhite);
     text-align: center;
 }
-.bottom h2{
+
+.bottom-content h2{
   margin-bottom: 0.5rem;
 }
+
 .breakfast-price , .open-times, .lunch-price{
   border-right: 1px solid black;
   border-left: 1px solid black;
   padding: 0 2rem;
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .grid-container {
+    gap: 1.5em;
+  }
+
+ .up{
+    padding: 3em;
+  }
+
+  .welcome-img {
+    padding: 0 8rem;
+  }
 }
 
 @media screen and (max-width: 1200px){
@@ -117,11 +149,13 @@
   .grid-container section{
     border-radius: 0;
   }
-  .bottom{
+
+  .bottom-content{
     flex-direction: column;
     justify-content: center;
   }
-  .breakfast-price , .lunch-price{
+
+  .breakfast-price, .lunch-price{
     border-right: none;
     border-left: none;
     border-top: 1px solid black;
@@ -129,11 +163,19 @@
     padding: 1rem 0;
     margin: 10px;
   }
+
+.up p {
+  padding: 0;
+  margin-bottom: 10px;
 }
+}
+
 @media (max-width:345px){
+
   .grid-container section{
     padding: 5px;
   }
+  
    .banner a{
     width: 7.5rem;
    }

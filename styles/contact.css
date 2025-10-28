@@ -121,12 +121,16 @@
 }
 
 .text{
-  opacity: 0;
+  display: none;
   height: 0;
 }
 
+.item {
+  margin-top: 5px;
+}
+
 .item:target .text {
-  opacity: 1;
+  display: block;
   height: auto;
   padding: 10px 10px;
 }
