@@ -22,7 +22,7 @@ body {
   font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
 }
 
-main, main > div, main > article, main > section, main > aside, .welcome {
+main, main > div, main > article, main > section, main > aside, .welcome, .content-horisontell {
   border-radius: 8px;
 }
 
