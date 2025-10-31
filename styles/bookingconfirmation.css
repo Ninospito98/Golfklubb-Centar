@@ -1,5 +1,5 @@
 .banner{
-  background: url('/bilder/banners/bookingbanner.png') no-repeat center 70%/cover;
+  background: url('../bilder/banners/bookingbanner.png') no-repeat center 70%/cover;
 }
 
 .bookingconfirm-wrapper{

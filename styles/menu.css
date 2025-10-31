@@ -1,5 +1,5 @@
 .banner {
-  background: url('/bilder/banners/menu-banner.jpg') no-repeat center center/cover;
+  background: url('../bilder/banners/menu-banner.jpg') no-repeat center center/cover;
 
 }
 .banner .button{
@@ -34,7 +34,7 @@ main div{
     "frukost a-la-carte main"
     "pizza pasta";
     padding: 1rem;
-    background: url('/bilder/restaurant/menu-lunch.jpg') no-repeat center center/cover;
+    background: url('../bilder/restaurant/menu-lunch.jpg') no-repeat center center/cover;
 
 }
 .restaurant-menu >h2 ,.restaurant-menu > p,
@@ -51,7 +51,7 @@ main div{
     "wine-drinks classics-drinks"
     ;
     padding: 1rem;
-    background: url('/bilder/restaurant/menu-drinks.jpeg') no-repeat center center/cover;
+    background: url('../bilder/restaurant/menu-drinks.jpeg') no-repeat center center/cover;
 }
 
 /* Screensizes */

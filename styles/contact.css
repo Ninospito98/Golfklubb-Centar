@@ -1,5 +1,5 @@
 .banner {
-  background: url('/bilder/banners/contact.png') no-repeat center 30%/cover;
+  background: url('../bilder/banners/contact.png') no-repeat center 30%/cover;
 }
 
 .contact-wrapper {

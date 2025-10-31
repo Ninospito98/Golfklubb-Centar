@@ -1,7 +1,7 @@
 /* Baserules */
 
 .banner{
-  background: url('/bilder/banners/close-up-golf-clubs-set.jpg') no-repeat center /cover;
+  background: url('../bilder/banners/close-up-golf-clubs-set.jpg') no-repeat center /cover;
 }
 
 .welcome{
