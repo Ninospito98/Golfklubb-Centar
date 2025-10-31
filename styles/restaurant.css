@@ -67,7 +67,7 @@
 
 .middle-left{
     grid-area: middle-left;
-    background: url('/bilder/restaurant/restaurant-breakfast.jpg') no-repeat center center/cover;
+    background: url('../bilder/restaurant/restaurant-breakfast.jpg') no-repeat center center/cover;
 
 }
 .middle-right{
