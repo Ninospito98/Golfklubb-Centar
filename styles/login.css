@@ -1,5 +1,5 @@
 .banner {
-  background: url('/bilder/banners/login-banner.jpg') no-repeat center/cover;
+  background: url('../bilder/banners/login-banner.jpg') no-repeat center/cover;
 }
 .banner-text{
     background-color: white; /* gjorde detta för att texten var inte mycket läsbart på grund av banner. kan ändras sedan om det behövs*/
