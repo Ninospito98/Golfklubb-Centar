@@ -135,4 +135,8 @@
  .news-grid {
   padding: 0;
  }
+ .main-article p {
+  padding: 0 10%;
+}
+ 
 }
