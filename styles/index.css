@@ -1,5 +1,5 @@
 .banner {
-  background: url('/bilder/banners/golf-ball-flag.jpg') no-repeat center center/cover;
+  background: url('./bilder/banners/golf-ball-flag.jpg') no-repeat center center/cover;
 }
 
 .start-wrapper {
