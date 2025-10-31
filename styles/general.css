@@ -218,7 +218,7 @@ input:focus::placeholder{
   }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 432px) {
   .footer-container{
     display: flex;
     flex-direction: column;
