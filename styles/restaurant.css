@@ -72,7 +72,7 @@
 }
 .middle-right{
     grid-area: middle-right;
-    background: url('/bilder/restaurant/restaurant-lunch.jpg') no-repeat center center/cover;
+    background: url('../bilder/restaurant/restaurant-lunch.jpg') no-repeat center center/cover;
 
 
 }
