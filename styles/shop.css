@@ -93,7 +93,7 @@ img{
     overflow-x: auto;             /* aktivera horisontell scroll */
     scroll-behavior: smooth;
     padding:2rem 0;
-    max-width: 1400px;             /* bredden som rymmer ca 4 produkter */
+    max-width: 1300px;             /* bredden som rymmer ca 4 produkter */
     margin: auto;  
     gap: 5rem;
 }
@@ -114,6 +114,9 @@ img{
     grid-template-rows: repeat(9, 1fr);
     gap: 1rem;
     padding: 0;
+  }
+  .shop-content-horisontell{
+    margin: 1rem 3rem;
   } 
 }
 
