@@ -1,5 +1,5 @@
 .banner{
-  background: url('/bilder/banners/flygbild.png') no-repeat center 80%/cover;
+  background: url('../bilder/banners/flygbild.png') no-repeat center 80%/cover;
 }
 
 h3 {

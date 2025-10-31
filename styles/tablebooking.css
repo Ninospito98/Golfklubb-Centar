@@ -1,5 +1,5 @@
 .banner {
-  background: url('/bilder/restaurant/salmon-with-ingredients-table.jpg') no-repeat center center/cover;
+  background: url('../bilder/restaurant/salmon-with-ingredients-table.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction:column;  
 }
@@ -28,7 +28,7 @@
 .table-wrapper{
     display: flex;
     justify-content: start;
-    background: url('/bilder/restaurant/tablebooking-bkg1.jpg') no-repeat center center/cover;
+    background: url('../bilder/restaurant/tablebooking-bkg1.jpg') no-repeat center center/cover;
 }
 .table-information{
     width: 400px;
