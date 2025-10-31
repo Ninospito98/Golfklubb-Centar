@@ -351,10 +351,10 @@ select option:checked{
     overflow: hidden;
   } 
   .form{
-    padding: 5px;  
+    padding: 15px;  
   }
 
-  .form, .form-container, .tournaments, .result, .small-calendar{
+  .form-container, .tournaments, .result, .small-calendar{
     padding: 0;
     margin: 0;
 
