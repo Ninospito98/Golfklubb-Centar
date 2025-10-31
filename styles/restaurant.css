@@ -142,6 +142,11 @@
       border-right: none;
       border-left: none;
     } 
+    .up p {
+      padding: 0 10%;
+  
+}
+
 }
 
 @media screen and (max-width: 610px) {
@@ -163,7 +168,9 @@
     padding: 1rem 0;
     margin: 10px;
   }
-
+.up{
+  padding: 5px;
+}
 .up p {
   padding: 0;
   margin-bottom: 10px;
